@@ -5,9 +5,9 @@ An EMMO-based application ontology that defines standardised procedures used wit
 ### Imported ontologies
 Version dependencies on imported ontologies:
 
-| Version | [EMMO] | [CHAMEO] | [DOM] | [MDO] |
+| Version | [EMMO] | [CHAMEO] | [MDO] | [DOM] |
 |---------|--------|----------|-------|-------|
-| 0.0.1   | 1.0.0  | 1.0.0    | 0.0.1 | 0.3.1 |
+| 0.0.1   | 1.0.0  | 1.0.0    | 0.3.1 | 0.0.1 |
 
 
 ## License
