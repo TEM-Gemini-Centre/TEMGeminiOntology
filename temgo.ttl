@@ -11,7 +11,8 @@
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
                                               owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
-                                              owl:imports <https://w3id.org/emmo/domain/microscopy/turtle> , <https://w3id.org/emmo/domain/microstructure/turtle> ;
+                                              owl:imports <https://w3id.org/emmo/domain/microscopy/turtle> ,
+                                                          <https://w3id.org/emmo/domain/microstructure/turtle> ;
                                               dcterms:contributor "SFI PhysMet"@en ;
                                               dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
                                                               "Inga D. Konow (NTNU)"@en ,
@@ -31,26 +32,124 @@
 ###  https://www.ntnu.edu/temgemini/vocab/temgo#AluminiumElectropolishing
 :AluminiumElectropolishing rdf:type owl:Class ;
                            rdfs:subClassOf <https://w3id.org/emmo/domain/microscopy#EMMO_769aa551_164a_48e4_b63e_c708c5aecbee> ;
-                           rdfs:comment "Standard procedure for electropolishing of aluminium samples within the TEM Gemini Centre."@en ;
-                           rdfs:label "AluminiumElectropolishing"@en .
+                           skos:prefLabel "AluminiumElectropolishing"@en ;
+                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard procedure for electropolishing of aluminium samples within the TEM Gemini Centre."@en .
 
 
 ###  https://www.ntnu.edu/temgemini/vocab/temgo#ExtrudedAluminiumCuttingAndPolishing
 :ExtrudedAluminiumCuttingAndPolishing rdf:type owl:Class ;
                                       rdfs:subClassOf <https://w3id.org/emmo/domain/microscopy#EMMO_d09ddf4a_357d_4692_bc57_5b1cfac10217> ;
-                                      rdfs:comment "The standard cutting and polishing procedure within the TEM Gemini Centre for an extruded aluminium profile."@en .
+                                      skos:prefLabel "ExtrudedAluminiumCuttingAndPolishing"@en ;
+                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The standard cutting and polishing procedure within the TEM Gemini Centre for an extruded aluminium profile."@en .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#T8T9Aging1
+:T8T9Aging1 rdf:type owl:Class ;
+            rdfs:subClassOf emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60 ,
+                            :T8T9TreatmentTask ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
+                              owl:someValuesFrom :T8T9Deformation
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                              owl:hasValue :t8t9aging1_duration
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                              owl:hasValue :t8t9aging1_temp
+                            ] ;
+            skos:prefLabel "T8T9Aging1"@en ;
+            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "First aging step of the T8T9 treatment."@en .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#T8T9Aging2
+:T8T9Aging2 rdf:type owl:Class ;
+            rdfs:subClassOf emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60 ,
+                            :T8T9TreatmentTask ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                              owl:hasValue :t8t9aging2_duration
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                              owl:hasValue :t8t9aging2_temp
+                            ] ;
+            skos:prefLabel "T8T9Aging2"@en ;
+            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Second aging step of the T8T9 treatment."@en .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#T8T9Deformation
+:T8T9Deformation rdf:type owl:Class ;
+                 rdfs:subClassOf :T8T9TreatmentTask ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
+                                   owl:someValuesFrom :T8T9Aging2
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                   owl:hasValue :t8t9deformation_strain
+                                 ] ;
+                 skos:prefLabel "T8T9Deformation"@en ;
+                 emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Deformation step of the T8T9 treatment."@en .
 
 
 ###  https://www.ntnu.edu/temgemini/vocab/temgo#T8T9Treatment
 :T8T9Treatment rdf:type owl:Class ;
-               rdfs:subClassOf emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb ;
-               rdfs:label """Thermomechanical treatment for T8 and T9 temper.
+               rdfs:subClassOf emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty emmo:EMMO_4ab7fb52_cec3_4c00_90c0_5648f01e3296 ;
+                                 owl:someValuesFrom :T8T9Aging1
+                               ] ;
+               skos:prefLabel "T8T9Treatment"@en ;
+               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Thermomechanical treatment for T8 and T9 temper.
 
 Treatment steps:
 - 100°C @ 1h
 - 15% deformation
-- 150°C @ 2h"""@en ;
-               skos:prefLabel "T8T9Treatment"@en .
+- 150°C @ 2h"""@en .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#T8T9TreatmentTask
+:T8T9TreatmentTask rdf:type owl:Class ;
+                   rdfs:subClassOf emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb ,
+                                   emmo:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc ;
+                   skos:prefLabel "T8T9TreatmentTask"@en ;
+                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of workflow tasks for the T8T9 treatment."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#t8t9aging1_duration
+:t8t9aging1_duration rdf:type owl:NamedIndividual ,
+                              emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
+                     emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "1h"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#t8t9aging1_temp
+:t8t9aging1_temp rdf:type owl:NamedIndividual ,
+                          emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
+                 emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "100°C"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#t8t9aging2_duration
+:t8t9aging2_duration rdf:type owl:NamedIndividual ,
+                              emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
+                     emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "2h"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#t8t9aging2_temp
+:t8t9aging2_temp rdf:type owl:NamedIndividual ,
+                          emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
+                 emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "150°C"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
+
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#t8t9deformation_strain
+:t8t9deformation_strain rdf:type owl:NamedIndividual ,
+                                 emmo:EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3 ;
+                        emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "15%"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
