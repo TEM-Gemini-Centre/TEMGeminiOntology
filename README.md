@@ -1,10 +1,9 @@
 # TEM Gemini Ontology (TEMGO)
-An EMMO-based application ontology that defines standardised procedures used within the TEM Gemini Centre.
+An EMMO-based application-level ontology that defines standardised procedures used within the TEM Gemini Centre.
 
-The ontology is available as a single turtle file on: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
-
-A pre-inferred version is available on: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl
-
+The ontology is available online as turtle files, either as asserted or pre-inferred (using the HermiT reasoner):
+- asserted: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
+- inferred: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl
 
 
 ### Imported ontologies
