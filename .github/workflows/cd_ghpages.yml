@@ -51,7 +51,9 @@ jobs:
 
     - name: Create inferred ontology
       run: |
-        # Running HermiT via ontoconvert with custom datatypes. Use ROBOT instead
+        # Running HermiT via ontoconvert fails with custom datatypes.
+        # Use ROBOT instead.
+        #
         #ontoconvert \
         #    -sawe \
         #    --base-iri="${ONTOLOGY_IRI}#" \
@@ -59,10 +61,11 @@ jobs:
         #    --infer=HermiT \
         #    ${ONTOLOGY_NAME}.ttl \
         #    build/${ONTOLOGY_NAME}-inferred.ttl
+        #
         bin/robot reason \
             --reasoner HermiT \
-            --input public/${ONTOLOGY_NAME}.ttl \
-            --output public/${ONTOLOGY_NAME}-inferred.ttl
+            --input ${ONTOLOGY_NAME}.ttl \
+            --output build/${ONTOLOGY_NAME}-inferred.ttl
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
