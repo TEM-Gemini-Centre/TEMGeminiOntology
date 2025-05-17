@@ -17,13 +17,27 @@
                                               dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
                                                               "Inga D. Konow (NTNU)"@en ,
                                                               "Jesper Friis (SINTEF)"@en ,
-                                                              "Sigurd Wenner (SINTEF)"@en ;
+                                                              "Sigurd Wenner (SINTEF)"@en ,
+                                                              "Tor S. Haugland (SINTEF)"@en ;
                                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
                                               dcterms:publisher <https://www.ntnu.edu/temgemini> ;
                                               dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "temgo" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" ;
                                               owl:versionInfo "0.0.1"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#hasDateOfReceival
+:hasDateOfReceival rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+                   rdfs:range xsd:dateTime ;
+                   skos:prefLabel "hasDateOfReceival"@en ;
+                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
+
 
 #################################################################
 #    Classes
