@@ -17,13 +17,27 @@
                                               dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
                                                               "Inga D. Konow (NTNU)"@en ,
                                                               "Jesper Friis (SINTEF)"@en ,
-                                                              "Sigurd Wenner (SINTEF)"@en ;
+                                                              "Sigurd Wenner (SINTEF)"@en ,
+                                                              "Tor S. Haugland (SINTEF)"@en ;
                                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
                                               dcterms:publisher <https://www.ntnu.edu/temgemini> ;
                                               dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "temgo" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" ;
                                               owl:versionInfo "0.0.1"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.ntnu.edu/temgemini/vocab/temgo#hasDateOfReceival
+:hasDateOfReceival rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+                   rdfs:range xsd:dateTime ;
+                   skos:prefLabel "hasDateOfReceival"@en ;
+                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
+
 
 #################################################################
 #    Classes
@@ -12986,7 +13000,7 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_3a9e6708-4df7-51a5-bd3f-f551d7f2ca30
 <https://w3id.org/emmo/domain/microstructure#EMMO_3a9e6708-4df7-51a5-bd3f-f551d7f2ca30> rdfs:subClassOf emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ,
-                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_fc7ad1c6-73e2-5525-9116-e4aee2f0dfc7> .
+                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_9c797a88_591d_4413_bca4_813cc112a1aa> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_3d026e8b_4fdb_4a0a_a389_5c852e466017
@@ -12995,11 +13009,6 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_3ed3297d-1512-5631-b0d3-7f36364040e0
 <https://w3id.org/emmo/domain/microstructure#EMMO_3ed3297d-1512-5631-b0d3-7f36364040e0> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_5b3cefe2-1504-5623-a95f-5ff9477e28a5> .
-
-
-###  https://w3id.org/emmo/domain/microstructure#EMMO_3fd3b90d-d1fb-5819-b312-a8926565820d
-<https://w3id.org/emmo/domain/microstructure#EMMO_3fd3b90d-d1fb-5819-b312-a8926565820d> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_95fac2ab-f304-5f3c-98ae-ad454ccd1d34> ,
-                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_d951a91c-c9ad-5f8c-919b-a51d0fcebb3d> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_41dfb6e9_1be1_411b_affa_8cf50bf3ea87
@@ -13028,8 +13037,8 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_4cff9c2a_c618_4df6_9c9d_6d5653d62e35
-<https://w3id.org/emmo/domain/microstructure#EMMO_4cff9c2a_c618_4df6_9c9d_6d5653d62e35> rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ,
-                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_848b495f_2124_406c_bc3a_6c211558a511> .
+<https://w3id.org/emmo/domain/microstructure#EMMO_4cff9c2a_c618_4df6_9c9d_6d5653d62e35> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_95fac2ab-f304-5f3c-98ae-ad454ccd1d34> ,
+                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_9d31ac42-8d58-592b-b443-ed19e084ee6b> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_50cde755-076b-5dce-b9d1-d260f93411a0
@@ -13214,9 +13223,12 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 <https://w3id.org/emmo/domain/microstructure#EMMO_9b94c1a2-a85f-588f-9619-7b2bc1be774e> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_255cf673-6d41-5fe1-b7c9-e8b9b0e31ed5> .
 
 
+###  https://w3id.org/emmo/domain/microstructure#EMMO_9c797a88_591d_4413_bca4_813cc112a1aa
+<https://w3id.org/emmo/domain/microstructure#EMMO_9c797a88_591d_4413_bca4_813cc112a1aa> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_fc7ad1c6-73e2-5525-9116-e4aee2f0dfc7> .
+
+
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_9d31ac42-8d58-592b-b443-ed19e084ee6b
-<https://w3id.org/emmo/domain/microstructure#EMMO_9d31ac42-8d58-592b-b443-ed19e084ee6b> rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ,
-                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_848b495f_2124_406c_bc3a_6c211558a511> .
+<https://w3id.org/emmo/domain/microstructure#EMMO_9d31ac42-8d58-592b-b443-ed19e084ee6b> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_848b495f_2124_406c_bc3a_6c211558a511> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_9ead4d78-23ad-5a33-8d8e-abef3925fcbb
@@ -13350,8 +13362,8 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_d951a91c-c9ad-5f8c-919b-a51d0fcebb3d
-<https://w3id.org/emmo/domain/microstructure#EMMO_d951a91c-c9ad-5f8c-919b-a51d0fcebb3d> rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ,
-                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_848b495f_2124_406c_bc3a_6c211558a511> .
+<https://w3id.org/emmo/domain/microstructure#EMMO_d951a91c-c9ad-5f8c-919b-a51d0fcebb3d> rdfs:subClassOf <https://w3id.org/emmo/domain/microstructure#EMMO_95fac2ab-f304-5f3c-98ae-ad454ccd1d34> ,
+                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_9d31ac42-8d58-592b-b443-ed19e084ee6b> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_dadc1e15-a920-503f-802e-074c16682eb1
@@ -13377,7 +13389,8 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:subClassOf emmo:EMMO_2946d40
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_e0304dcb-96a3-5e44-a4bd-9628f9b910cc
-<https://w3id.org/emmo/domain/microstructure#EMMO_e0304dcb-96a3-5e44-a4bd-9628f9b910cc> rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac .
+<https://w3id.org/emmo/domain/microstructure#EMMO_e0304dcb-96a3-5e44-a4bd-9628f9b910cc> rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ,
+                                                                                                        <https://w3id.org/emmo/domain/microstructure#EMMO_95fac2ab-f304-5f3c-98ae-ad454ccd1d34> .
 
 
 ###  https://w3id.org/emmo/domain/microstructure#EMMO_e058f954_68e0_41c6_ad9b_f9460c83b408
