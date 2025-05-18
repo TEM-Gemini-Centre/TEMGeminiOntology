@@ -24,7 +24,7 @@ resources:
       heatTreatment:
         iri: mdo:hasHeatTreatmentLabel
         range: rdfs:Literal
-        datatype: xsd:date
+        datatype: xsd:string
         description: A label for the heat treatment process.
 
       notes:
@@ -51,7 +51,7 @@ resources:
       received:
         iri: temgo:dataOfReceival
         range: rdfs:Literal
-        datatype: xsd:dateTime
+        #datatype: xsd:dateTime
         description: The data an object is received.
 
       studiedBy:
