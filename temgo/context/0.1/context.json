@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "temgo": "https://www.ntnu.edu/temgemini/vocab/temgo#",
+    "mdo": "https://w3id.org/emmo/domain/microstructure#",
+    "alloyName": {
+      "@id": "dcterms:identifier",
+      "@type": "@id"
+    },
+    "hasSingleComponentComposition": {
+      "@id": "https://w3id.org/emmo#EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5",
+      "@type": "@id"
+    },
+    "heatTreatment": {
+      "@id": "mdo:hasHeatTreatmentLabel",
+      "@type": "xsd:date"
+    },
+    "notes": {
+      "@id": "skos:note",
+      "@language": "en"
+    },
+    "producedBy": {
+      "@id": "https://w3id.org/emmo#EMMO_89c5fd4c_c7b5_4fde_bca8_7734cbda777a",
+      "@type": "@id"
+    },
+    "productionMethod": {
+      "@id": "https://w3id.org/emmo#EMMO_0e86a108_9d4d_4582_8126_f0c527d81901",
+      "@type": "@id"
+    },
+    "received": {
+      "@id": "temgo:dataOfReceival",
+      "@type": "xsd:dateTime"
+    },
+    "studiedBy": {
+      "@id": "temgo:studiedBy",
+      "@type": "xsd:string"
+    },
+    "studiedFor": {
+      "@id": "temgo:studiedFor",
+      "@type": "xsd:string"
+    },
+    "hasSIQuantityValue": {
+      "@id": "https://w3id.org/emmo#EMMO_42806efc_581b_4ff8_81b0_b4d62153458b",
+      "@type": "https://w3id.org/emmo#EMMO_799c067b_083f_4365_9452_1f1433b03676"
+    },
+    "chemicalSymbol": {
+      "@id": "temgo:chemicalSymbol",
+      "@type": "xsd:string"
+    },
+    "Alloy": "https://w3id.org/emmo/domain/microstructure#EMMO_e25884df-decb-52e1-b8c0-f5092dd40066",
+    "SingleComponentComposition": "https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2"
+  }
+}

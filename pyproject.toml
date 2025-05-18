@@ -3,13 +3,8 @@ requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "TEMGeminiOntology"
-authors = [
-    {name = "SINTEF", email = "jesper.friis@sintef.no"},
-]
-description = "Ontology for the TEM Gemini Centre."
-readme = "README.md"
-license = {file = "LICENSE"}
+name = "temgo"
+description = "TEM Gemini Ontology (TEMGO)."
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "License :: OSI Approved :: MIT License",
@@ -24,9 +19,11 @@ classifiers = [
     "Natural Language :: English",
     "Operating System :: OS Independent",
 ]
-keywords = ["TEM", "ontology"]
+keywords = ["TEM Gemini Centre", "ontology"]
+readme = "README.md"
+license = {file = "LICENSE.md"}
 requires-python = ">=3.9"
-dynamic = ["0.0.1"]
+dynamic = ["version"]
 
 dependencies = [
     "tripper[datadoc]",
@@ -42,7 +39,7 @@ Changelog = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/blob/master/
 
 
 [tool.setuptools.package-data]
-"tripper.context" = ["*.json", "*.yaml"]
+"temgo.context" = ["*.json", "*.yaml"]
 
 
 # Note the quotes around dlite.python_storage_plugins to escape the embedded dot
