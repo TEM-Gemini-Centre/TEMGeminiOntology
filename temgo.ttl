@@ -11,12 +11,11 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
 @prefix temgo: <https://www.ntnu.edu/temgemini/vocab/temgo#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
     owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
-    owl:imports <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1/dependencies> ;
+    owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
     dcterms:contributor <https://www.ntnu.edu/physmet> ;
     dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
                     "Inga D. Konow (NTNU)"@en ,
