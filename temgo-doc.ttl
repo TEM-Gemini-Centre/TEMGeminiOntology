@@ -4631,13 +4631,13 @@ temgo:T8T9Aging1 a owl:Class ;
     rdfs:comment "First aging step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_duration ;
+            owl:hasValue temgo:t8t9aging1_temp ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
             owl:someValuesFrom temgo:T8T9Deformation ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_temp ;
+            owl:hasValue temgo:t8t9aging1_duration ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60,
         temgo:T8T9TreatmentTask ;
@@ -4650,10 +4650,10 @@ temgo:T8T9Aging2 a owl:Class ;
     rdfs:comment "Second aging step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging2_duration ;
+            owl:hasValue temgo:t8t9aging2_temp ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging2_temp ;
+            owl:hasValue temgo:t8t9aging2_duration ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60,
         temgo:T8T9TreatmentTask ;
@@ -4666,11 +4666,11 @@ temgo:T8T9Deformation a owl:Class ;
     rdfs:comment "Deformation step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9deformation_strain ;
-            owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
             owl:someValuesFrom temgo:T8T9Aging2 ],
+        [ a owl:Restriction ;
+            owl:hasValue temgo:t8t9deformation_strain ;
+            owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         temgo:T8T9TreatmentTask ;
     skos:prefLabel "T8T9Deformation"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Deformation step of the T8T9 treatment."@en .
