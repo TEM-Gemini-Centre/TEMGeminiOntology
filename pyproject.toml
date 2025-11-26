@@ -9,19 +9,19 @@ classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Environment :: Plugins",
     "Natural Language :: English",
     "Operating System :: OS Independent",
 ]
 keywords = ["TEM Gemini Centre", "ontology"]
 readme = "README.md"
-license = {file = "LICENSE.md"}
+license = {file = "LICENSE"}
 requires-python = ">=3.9"
 dynamic = ["version"]
 

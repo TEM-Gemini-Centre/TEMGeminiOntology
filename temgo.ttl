@@ -8,6 +8,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
+@prefix temgo: <https://www.ntnu.edu/temgemini/vocab/temgo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
@@ -34,20 +38,142 @@
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a property to a characterisation technique that this property is relevant for."@en .
 
 
+temgo:accelerationVoltage a owl:DatatypeProperty ;
+    rdfs:label "accelerationVoltage" ;
+    dcterms:description "Electron acceleration voltage" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "V" .
 
-#################################################################
-#    Data properties
-#################################################################
+temgo:apertureDiameterObjective a owl:DatatypeProperty ;
+    rdfs:label "apertureDiameterObjective" ;
+    dcterms:description "Diameter of objective aperture" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "m" .
 
-###  https://www.ntnu.edu/temgemini/vocab/temgo#hasDateOfReceival
+temgo:beamCurrent a owl:DatatypeProperty ;
+    rdfs:label "beamCurrent" ;
+    dcterms:description "Current of the electron beam" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "A" ;
+    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+
+temgo:detectorMode a owl:DatatypeProperty ;
+    rdfs:label "detectorMode" ;
+    dcterms:description "Detecor's mode, e.g., SE" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:string .
+
+temgo:detectorName a owl:DatatypeProperty ;
+    rdfs:label "detectorName" ;
+    dcterms:description "Detecor's name, e.g., ETD" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:string .
+
+temgo:dwellTime a owl:DatatypeProperty ;
+    rdfs:label "dwellTime" ;
+    dcterms:description "Beam dwell time on each pixel during scan." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "s" ;
+    temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
+        temgo:STEM .
+
+temgo:electronSource a owl:DatatypeProperty ;
+    rdfs:label "electronSource" ;
+    dcterms:description "Electron source, e.g., FEG" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:string .
+
+temgo:instrument a owl:ObjectProperty ;
+    rdfs:label "instrument" ;
+    dcterms:description "Reference to the instrument" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range temgo:Instrument .
+
+temgo:lineIntegration a owl:DatatypeProperty ;
+    rdfs:label "lineIntegration" ;
+    dcterms:description "Number of times each line was scanned for intensity integration." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:integer ;
+    temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
+        temgo:STEM .
+
+temgo:magnification a owl:DatatypeProperty ;
+    rdfs:label "magnification" ;
+    dcterms:description "Magnification" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double .
+
+temgo:sampleHolder a owl:ObjectProperty ;
+    rdfs:label "sampleHolder" ;
+    dcterms:description "Reference to sample holder" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range temgo:SampleHolder ;
+    temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
+
+temgo:stagePositionX a owl:DatatypeProperty ;
+    rdfs:label "PositionX" ;
+    dcterms:description "X position of the stage/specimen relative to origin" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "m" .
+
+temgo:stagePositionY a owl:DatatypeProperty ;
+    rdfs:label "PositionY" ;
+    dcterms:description "Y position of the stage/specimen relative to origin" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "m" .
+
+temgo:stagePositionZ a owl:DatatypeProperty ;
+    rdfs:label "PositionZ" ;
+    dcterms:description "Z position of the stage/specimen relative to origin" ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "m" .
+
+temgo:stageRotation a owl:DatatypeProperty ;
+    rdfs:label "stageRotation" ;
+    dcterms:description "In-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+
+temgo:stageTiltX a owl:DatatypeProperty ;
+    rdfs:label "TiltX" ;
+    dcterms:description "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" .
+
+temgo:stageTiltY a owl:DatatypeProperty ;
+    rdfs:label "TiltY" ;
+    dcterms:description "Tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
+
+temgo:workingDistance a owl:DatatypeProperty ;
+    rdfs:label "workingDistance" ;
+    dcterms:description "Distance between the sample and the electron polepiece." ;
+    rdfs:domain dcat:Resource ;
+    rdfs:range xsd:double ;
+    ddoc:unit "?m" ;
+    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+
+
+
 :hasDateOfReceival rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf owl:topDataProperty ;
                    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
                    rdfs:range xsd:dateTime ;
                    skos:prefLabel "hasDateOfReceival"@en ;
                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
-
-
 
 
 
