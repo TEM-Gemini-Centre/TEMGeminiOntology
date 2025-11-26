@@ -56,12 +56,14 @@ jobs:
       run: |
         mkdir build
         cp README.md LICENSE build/.
+
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
             --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
             ${ONTOLOGY_NAME}-dependencies.ttl \
             build/${ONTOLOGY_NAME}-dependencies.ttl
+
         ontoconvert \
             -sawe \
             --namespace="emmo:https://w3id.org/emmo#" \
@@ -71,6 +73,16 @@ jobs:
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}.ttl
 
+        ontoconvert \
+            -awe \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
+            --base-iri="${ONTOLOGY_IRI}#" \
+            --iri="${ONTOLOGY_IRI}" \
+            --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
+            --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
+            ${ONTOLOGY_NAME}.ttl \
+            build/${ONTOLOGY_NAME}-doc.ttl
 
     - name: Create inferred ontology
       run: |
@@ -92,20 +104,10 @@ jobs:
 
     - name: Generate markdown documentation of all keywords
       run: |
-        keywords -i ${ONTOLOGY_NAME}.ttl --keywords build/${ONTOLOGY_NAME}.md --theme=${ONTOLOGY_THEME} --redefine=allow
+        keywords -i build/${ONTOLOGY_NAME}-doc.ttl --keywords build/${ONTOLOGY_NAME}.md --theme=${ONTOLOGY_THEME} --redefine=allow
 
     - name: Generate Widoco documentation
       run: |
-        ontoconvert \
-            -awe \
-            --namespace="emmo:https://w3id.org/emmo#" \
-            --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
-            --base-iri="${ONTOLOGY_IRI}#" \
-            --iri="${ONTOLOGY_IRI}" \
-            --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
-            --copy-annotation="prefLabel-->http://www.w3.org/2000/01/rdf-schema#label" \
-            ${ONTOLOGY_NAME}.ttl \
-            build/${ONTOLOGY_NAME}-doc.ttl
         java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
             -ontFile build/${ONTOLOGY_NAME}-doc.ttl \
             -outFolder build/widoco \
