@@ -44,6 +44,10 @@ jobs:
         chmod +x bin/robot
         ls -l bin/
 
+    - name: Download Widoco
+      run: |
+        wget --quiet https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
+
     - name: Create squashed ontology
       run: |
         mkdir build
@@ -81,6 +85,17 @@ jobs:
     - name: Generate markdown documentation of all keywords
       run: |
         keywords -i temgo.ttl --keywords build/temgo.md
+
+    - name: Generate Widoco documentation
+      run: |
+        java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+            -ontFile temgo.ttl \
+            -outFolder build/widoco \
+            -getOntologyMetadata \
+            -rewriteAll \
+            -includeImportedOntologies \
+            -licensius \
+            -includeAnnotationProperties
 
 
     - name: Deploy to GitHub Pages
