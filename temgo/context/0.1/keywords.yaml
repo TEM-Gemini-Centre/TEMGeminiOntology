@@ -70,7 +70,7 @@ resources:
 
   Property:
     iri: rdf:Property
-    description: Any rdf:Property
+    description: The class of RDF properties.
     keywords:
       relatedTechnique:
         iri: temgo:relatedTechnique
