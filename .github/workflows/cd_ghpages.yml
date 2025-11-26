@@ -97,7 +97,6 @@ jobs:
             -outFolder build/widoco \
             -getOntologyMetadata \
             -rewriteAll \
-            -includeImportedOntologies \
             -licensius \
             -includeAnnotationProperties
 
