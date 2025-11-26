@@ -29,6 +29,12 @@ dependencies = [
     "tripper[datadoc]",
 ]
 
+[project.optional-dependencies]
+alloytable = [
+    "pandas",
+]
+
+
 [project.urls]
 Home = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology"
 Documentation = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology"

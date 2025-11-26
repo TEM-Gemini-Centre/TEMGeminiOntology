@@ -1,7 +1,5 @@
 """Reusable functions and classes for working with TEM Gemini Ontology"""
 
-import pandas as pd
-
 from tripper import EMMO, OWL, RDFS, XSD
 from tripper import Literal, Namespace, Triplestore
 from tripper.datadoc.dataset import add
@@ -86,7 +84,11 @@ def get_alloy_dicts(filename, alloy_prefix="mat", type=MDO.Alloy, **kw):
     """Load alloys from `filename` and return it as a list of dicts.
 
     Keyword arguments are passed on to `pd.read_excel()`.
+
+    Note, this function requires pandas.
     """
+    import pandas as pd
+
     df = pd.read_excel(filename, **kw)
 
     alloy_names = [str(s).strip() for s in df["Alloy name"]]
