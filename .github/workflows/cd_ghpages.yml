@@ -113,6 +113,7 @@ jobs:
             -outFolder build/widoco \
             -getOntologyMetadata \
             -rewriteAll \
+            -saveConfig build/widoco/widoco.conf \
             -licensius \
             -includeAnnotationProperties
 
