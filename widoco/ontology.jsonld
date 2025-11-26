@@ -102,13 +102,13 @@
   "@id" : "_:genid1005",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
+    "@value" : "The rule for the subproperty chain:\n inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"
   } ]
 }, {
   "@id" : "_:genid1006",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\n inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"
+    "@value" : "The rule for the subproperty chain:\n inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"
   } ]
 }, {
   "@id" : "_:genid1007",
@@ -126,7 +126,7 @@
   "@id" : "_:genid1009",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\n inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"
+    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
   } ]
 }, {
   "@id" : "_:genid101",
@@ -141,31 +141,31 @@
   "@id" : "_:genid1010",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
+    "@value" : "The rule for the subproperty chain:\n inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"
   } ]
 }, {
   "@id" : "_:genid1011",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
+    "@value" : "The rule for the subproperty chain:\n inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"
   } ]
 }, {
   "@id" : "_:genid1012",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\n inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"
+    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
   } ]
 }, {
   "@id" : "_:genid1013",
   "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f" : [ {
     "@language" : "en",
-    "@value" : "The rule for the subproperty chain:\n inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"
+    "@value" : "The rule for the subproperty chain:\ninverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"
   } ]
 }, {
   "@id" : "_:genid1014",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1015",
@@ -177,17 +177,17 @@
   "@id" : "_:genid1016",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1017",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1018",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -210,13 +210,13 @@
   "@id" : "_:genid1020",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "4"
   } ]
 }, {
   "@id" : "_:genid1021",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1022",
@@ -226,7 +226,7 @@
   } ]
 }, {
   "@id" : "_:genid1023",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -244,7 +244,7 @@
   } ]
 }, {
   "@id" : "_:genid1026",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "2"
   } ]
@@ -252,11 +252,11 @@
   "@id" : "_:genid1027",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "3"
   } ]
 }, {
   "@id" : "_:genid1028",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -279,23 +279,23 @@
   "@id" : "_:genid1030",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1031",
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1032",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1033",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -307,7 +307,7 @@
   } ]
 }, {
   "@id" : "_:genid1035",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "2"
   } ]
@@ -321,13 +321,13 @@
   "@id" : "_:genid1037",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "3"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1038",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1039",
@@ -348,7 +348,7 @@
   "@id" : "_:genid1040",
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1041",
@@ -360,7 +360,7 @@
   "@id" : "_:genid1042",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "3"
   } ]
 }, {
   "@id" : "_:genid1043",
@@ -372,13 +372,13 @@
   "@id" : "_:genid1044",
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1045",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "4"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1046",
@@ -390,7 +390,7 @@
   "@id" : "_:genid1047",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1048",
@@ -402,7 +402,7 @@
   "@id" : "_:genid1049",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "4"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid105",
@@ -428,15 +428,15 @@
   } ]
 }, {
   "@id" : "_:genid1052",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1053",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1054",
@@ -446,7 +446,7 @@
   } ]
 }, {
   "@id" : "_:genid1055",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -454,37 +454,37 @@
   "@id" : "_:genid1056",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1057",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "3"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1058",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "3"
+    "@value" : "4"
   } ]
 }, {
   "@id" : "_:genid1059",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1060",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1061",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1062",
@@ -512,19 +512,19 @@
   } ]
 }, {
   "@id" : "_:genid1066",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "2"
-  } ]
-}, {
-  "@id" : "_:genid1067",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
+  "@id" : "_:genid1067",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "3"
+  } ]
+}, {
   "@id" : "_:genid1068",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -536,7 +536,7 @@
   } ]
 }, {
   "@id" : "_:genid1070",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -548,7 +548,7 @@
   } ]
 }, {
   "@id" : "_:genid1072",
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "2"
   } ]
@@ -560,9 +560,9 @@
   } ]
 }, {
   "@id" : "_:genid1074",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "2"
   } ]
 }, {
   "@id" : "_:genid1075",
@@ -584,15 +584,15 @@
   } ]
 }, {
   "@id" : "_:genid1078",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "4"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid1079",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "4"
   } ]
 }, {
   "@id" : "_:genid108",
@@ -11264,7 +11264,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -11482,6 +11482,9 @@
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -11542,6 +11545,42 @@
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ]
 }, {
+  "@id" : "https://orcid.org/0000-0002-9153-9866",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Tor Strømsem Haugland"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TorHaugland"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Tor Strømsem Haugland"
+  } ],
+  "http://xmlns.com/foaf/0.1/workplaceHomepage" : [ {
+    "@id" : "https://www.sintef.no/en"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-0845-0287",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Sigurd Wenner"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SigurdWenner"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Sigurd Wenner"
+  } ],
+  "http://xmlns.com/foaf/0.1/workplaceHomepage" : [ {
+    "@id" : "https://www.sintef.no/en"
+  } ]
+}, {
   "@id" : "https://schema.org/unitCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -11600,9 +11639,9 @@
     "@value" : "Categorisation of physical objects by how they are bonded."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -11848,9 +11887,9 @@
     "@value" : "A coded classified by its structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -11947,9 +11986,9 @@
     "@value" : "Categorisation of matter by its structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -12013,9 +12052,9 @@
     "@value" : "Categorisation of matter by its type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -12082,9 +12121,9 @@
     "@value" : "Categorisation of physical particles by whether they are bonded."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -12994,9 +13033,9 @@
     "@value" : "— quantities of the same kind have the same quantity dimension,\n— quantities of different quantity dimensions are always of different kinds, and\n— quantities having the same quantity dimension are not necessarily of the same kind.\nISO 80000-1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -13629,7 +13668,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -14087,9 +14126,9 @@
     "@value" : "VIM defines a quantity as a \"property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed as a number and a reference\".\n\nA quantity in EMMO is a property and therefore only addresses the first part of the VIM definition (that is a property of a phenomenon, body, or substance). The second part (that it can be expressed as a number and a reference) is syntactic and addressed by emmo:QuantityValue."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -15054,9 +15093,9 @@
     "@value" : "A causally bonded system is a system in which there are at least two causal paths that are interacting."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -15296,7 +15335,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -15585,7 +15624,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -16258,7 +16297,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -16695,7 +16734,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -18949,7 +18988,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -19790,7 +19829,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/computerscience#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -20960,7 +20999,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -21117,9 +21156,9 @@
     "@value" : "Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.\n\nNote that the name of a compound may refer to the respective molecular entity or to the chemical species,"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   }, {
@@ -21504,7 +21543,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -23159,7 +23198,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -23986,7 +24025,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -24190,7 +24229,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -25627,9 +25666,9 @@
     "@value" : "Bounded matter."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -26188,7 +26227,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/manufacturing#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -26335,9 +26374,9 @@
     "@value" : "In Peirce semiotics this kind of sign category is called symbol. However, since symbol is also used in formal languages, the name is changed in conventional."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -27151,9 +27190,9 @@
     "@value" : "The class of individuals standing for causally convex interacting systems."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -27269,7 +27308,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -29905,9 +29944,9 @@
     "@value" : "The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -30243,7 +30282,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -30828,7 +30867,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/models#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -31254,7 +31293,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -32482,9 +32521,9 @@
     "@value" : "Sign classified by how the sign stands for its reference object."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -33342,7 +33381,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -33555,7 +33594,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -36476,9 +36515,9 @@
     "@value" : "The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -37397,9 +37436,9 @@
     "@value" : "The interpretation of the term \"matter\" is not univocal. Several concepts are labelled with this term, depending on the field of science. The concept mass is sometimes related to the term \"matter\", even if the former refers to a physical quantity (precisely defined by modern physics) while the latter is a type that qualifies a physical entity.\nIt is possible to identify more than one concept that can be reasonably labelled with the term \"matter\". For example, it is possible to label as matter only the entities that are made up of atoms. Or more generally, we can be more fine-grained and call \"matter\" the entities that are made up of protons, neutrons or electrons, so that we can call matter also a neutron radiation or a cathode ray.\nA more fundamental approach, that we embrace for the EMMO, considers matter as entities that are made of fermions (i.e. quarks and leptons) requiring their presence, without excluding particles like the W and Z bosons that possess some mass, but are not fermions.\nAntimatter is a subclass of matter."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -38252,7 +38291,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -38696,7 +38735,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -40168,7 +40207,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -41873,9 +41912,9 @@
     "@value" : "Matter composed of only matter particles, excluding anti-matter particles."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -41945,7 +41984,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -42635,7 +42674,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/manufacturing#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -42680,7 +42719,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -42984,9 +43023,9 @@
     "@value" : "A conventional that stands for an object according to a code of interpretation to which the interpreter refers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -43633,9 +43672,9 @@
     "@value" : "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -44014,9 +44053,9 @@
     "@value" : "The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -44414,7 +44453,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -45241,9 +45280,9 @@
     "@value" : "A bonded object is a sequence of fundamental interactions that can be described approximatively by Schrodinger formulation. A bonded object is typically characterised by having quantum states (e.g.  electron states in an atom, energy levels of a molecule). Furthermore, a bonded object is made of elementary particles that travels from the beginning to the end of the entity (i.e. a bonded object doesn't change its components)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -48303,7 +48342,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -48340,9 +48379,9 @@
     "@value" : "A composite particle is a bonded particle for which it is possible to clearly define its bosonic or fermionic behaviour. The term particle is then reserved for entities whose fermionic or bosonic nature is clearly defined."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -48557,9 +48596,9 @@
     "@value" : "A perspective based on Pierce semiotics, where an interpreter relates a referent to a sign in through semiotic relations."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -50493,7 +50532,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -51767,7 +51806,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -53091,7 +53130,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -54523,9 +54562,9 @@
     "@value" : "The union of hadron and lepton, or fermion and bosons."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -54688,7 +54727,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -54808,7 +54847,7 @@
   "@id" : "https://w3id.org/emmo#EMMO_a293f923_954c_4af5_9f97_9600ebd362cb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -54837,7 +54876,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -55246,7 +55285,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -55571,7 +55610,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -55795,7 +55834,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -55869,7 +55908,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -57852,9 +57891,9 @@
     "@value" : "An 'Physical' that is used as sign (\"semeion\" in greek) that stands for another 'Physical' through an semiotic process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -57994,9 +58033,9 @@
     "@value" : "A generic physical system is everything which is more complex than a scattering interaction, or a decay/annihilation event, which are represented by a single Feynman diagram."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -59303,9 +59342,9 @@
     "@value" : "A property is atomic in the sense that is aimed to deliver one and one only aspect of the object according to one code, such as the color with one sign (e.g., black) or a quantitiative property (e.g., 1.4 kg)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -59350,9 +59389,9 @@
     "@value" : "The class of individuals that stands for semiotic objects, i.e. objects that take part on a semiotic process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -59782,7 +59821,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -59921,7 +59960,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -60171,9 +60210,9 @@
     "@value" : "A composite physical object made of fermions (i.e. having mass and occupying space)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -64228,7 +64267,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -64602,7 +64641,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -65085,7 +65124,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -65890,7 +65929,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -66868,7 +66907,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/metrology#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -66938,7 +66977,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -67582,9 +67621,9 @@
     "@value" : "Categorisation of quantities by their physical nature."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -67983,7 +68022,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -70458,9 +70497,9 @@
     "@value" : "The class of individuals representing a causal system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/emmo/disciplines/chemistry#"
-  }, {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
+  }, {
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -72203,7 +72242,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -73307,7 +73346,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -73487,7 +73526,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/materials#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -73638,7 +73677,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -73706,7 +73745,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -74114,7 +74153,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -74153,7 +74192,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -74822,7 +74861,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -75665,7 +75704,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/isq#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/microstructure#"
+    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -76066,7 +76105,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/disciplines/manufacturing#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -78108,7 +78147,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -78436,7 +78475,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -78492,7 +78531,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -82659,7 +82698,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -83115,7 +83154,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -83353,7 +83392,7 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#"
   }, {
-    "@id" : "https://w3id.org/emmo/domain/concrete/depencencies#"
+    "@id" : "https://w3id.org/emmo/domain/microscopy#"
   }, {
     "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"
   } ],
@@ -93217,6 +93256,42 @@
   } ],
   "https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique" : [ {
     "@id" : "https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy"
+  } ]
+}, {
+  "@id" : "https://www.ntnu.no/ansatte/inga.konow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Inga D. Konow"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "IngaKonow"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Inga D. Konow"
+  } ],
+  "http://xmlns.com/foaf/0.1/workplaceHomepage" : [ {
+    "@id" : "https://www.ntnu.edu"
+  } ]
+}, {
+  "@id" : "https://www.researchgate.net/profile/Elisabeth-Thronsen-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Elisabeth Thronsen"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ElisabethThronsen"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Elisabeth Thronsen"
+  } ],
+  "http://xmlns.com/foaf/0.1/workplaceHomepage" : [ {
+    "@id" : "https://www.sintef.no/en"
   } ]
 }, {
   "@id" : "urn:swrl:var#x",
