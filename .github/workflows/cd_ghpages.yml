@@ -30,6 +30,10 @@ jobs:
         pip install --upgrade pip
         pip install EMMOntoPy
 
+    - name: Install tripper
+      run: |
+        pip install -U git+https://github.com/EMMC-ASBL/tripper.git@document-selected-namespace
+
     - name: Install ROBOT
       run: |
         mkdir bin
@@ -72,6 +76,11 @@ jobs:
             --reasoner HermiT \
             --input build/${ONTOLOGY_NAME}.ttl \
             --output build/${ONTOLOGY_NAME}-inferred.ttl
+
+    - name: Generate markdown documentation of all keywords
+      run: |
+        keywords -i temgo.ttl --keywords build/temgo.md
+
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
