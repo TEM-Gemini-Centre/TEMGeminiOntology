@@ -4,17 +4,17 @@
 @prefix : <> .
 <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> a prov:Entity;
 	 dc:title "TEM Gemini Ontology (TEMGO)";
-	 prov:wasAttributedTo :agent0;
-	 prov:wasAttributedTo :agent1;
-	 prov:wasAttributedTo :agent2;
-	 prov:wasAttributedTo :agent3;
-	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-1560-809X>;
+	 dc:creator <https://orcid.org/0000-0002-1560-809X>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-9153-9866>;
+	 dc:creator <https://orcid.org/0000-0002-9153-9866>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-0845-0287>;
+	 dc:creator <https://orcid.org/0000-0003-0845-0287>;
+	 prov:wasAttributedTo <https://www.ntnu.no/ansatte/inga.konow>;
+	 dc:creator <https://www.ntnu.no/ansatte/inga.konow>;
+	 prov:wasAttributedTo <https://www.researchgate.net/profile/Elisabeth-Thronsen-2>;
+	 dc:creator <https://www.researchgate.net/profile/Elisabeth-Thronsen-2>;
 	 prov:wasAttributedTo <https://www.ntnu.edu/physmet>;
 	 dc:contributor <https://www.ntnu.edu/physmet>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "Elisabeth Thronsen (SINTEF)".
-:agent1 a prov:Agent; foaf:name "Inga D. Konow (NTNU)".
-:agent2 a prov:Agent; foaf:name "Jesper Friis (SINTEF)".
-:agent3 a prov:Agent; foaf:name "Sigurd Wenner (SINTEF)".
-:agent4 a prov:Agent; foaf:name "Tor S. Haugland (SINTEF)".
