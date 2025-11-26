@@ -44,4 +44,4 @@ Changelog = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/blob/master/
 
 # Note the quotes around dlite.python_storage_plugins to escape the embedded dot
 [project.entry-points."tripper.keywords"]
-"temgo/context/0.1" = "TEMGemini"
+"temgo/context/0.1/keywords.yaml" = "ddoc:temgo"

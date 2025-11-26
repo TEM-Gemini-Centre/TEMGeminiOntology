@@ -1,9 +1,10 @@
 ---
-#basedOn: default
+basedOn: ddoc:prefixes
 
 prefixes:
   temgo: https://www.ntnu.edu/temgemini/vocab/temgo#
   mdo: https://w3id.org/emmo/domain/microstructure#
+  emmo: https://w3id.org/emmo#
 
 resources:
   Alloy:
