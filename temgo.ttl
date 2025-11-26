@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix chameo: <https://w3id.org/emmo/domain/characterisation-methodology/chameo#> .
 @prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -10,21 +11,29 @@
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
-                                              owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
-                                              owl:imports <https://w3id.org/emmo/domain/microscopy/turtle> ,
-                                                          <https://w3id.org/emmo/domain/microstructure/turtle> ;
-                                              dcterms:contributor "SFI PhysMet"@en ;
-                                              dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
-                                                              "Inga D. Konow (NTNU)"@en ,
-                                                              "Jesper Friis (SINTEF)"@en ,
-                                                              "Sigurd Wenner (SINTEF)"@en ,
-                                                              "Tor S. Haugland (SINTEF)"@en ;
-                                              dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
-                                              dcterms:publisher <https://www.ntnu.edu/temgemini> ;
-                                              dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
-                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "temgo" ;
-                                              <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" ;
-                                              owl:versionInfo "0.0.1"@en .
+    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
+    owl:imports <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1/dependencies> ;
+    dcterms:contributor <https://www.ntnu.edu/physmet> ;
+    dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
+                    "Inga D. Konow (NTNU)"@en ,
+                    "Jesper Friis (SINTEF)"@en ,
+                    "Sigurd Wenner (SINTEF)"@en ,
+                    "Tor S. Haugland (SINTEF)"@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+    dcterms:publisher <https://www.ntnu.edu/temgemini> ;
+    dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "temgo" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" ;
+    owl:versionInfo "0.0.1"@en .
+
+
+:relatedTechnique a owl:AnnotationProperty ;
+    rdfs:domain rdf:Property ;
+    rdfs:range chameo:CharacterisationTechnique ;
+    skos:prefLabel "relatedTechnique"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a property to a characterisation technique that this property is relevant for."@en .
+
+
 
 #################################################################
 #    Data properties
@@ -39,9 +48,37 @@
                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
 
 
+
+
+
+
 #################################################################
 #    Classes
 #################################################################
+
+
+:Instrument a owl:Class ;
+    rdfs:subClassOf chameo:CharacterisationMeasurementInstrument ;
+    skos:prefLabel "Instrument" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Device used for making measurements, alone or in conjunction with one or more supplementary devices."@en .
+
+:TransmissionElectronMicroscope ;
+    rdfs:subClassOf :Instrument , chameo:CharacterisationSystem ;
+    skos:prefLabel "TransmissionElectronMicroscope" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A high-resolution characterisation system that uses a beam of electrons transmitted through the sample. It provides detailed information about a sample's internal structure, morphology, and chemical composition down to the atomic level by detecting the electrons that pass through."@en .
+
+:ScanningElectronMicroscope ;
+    rdfs:subClassOf :Instrument, chameo:CharacterisationSystem ;
+    skos:prefLabel "ScanningElectronMicroscope" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A type of electron microscope that produces images of a sample by scanning the surface with a focused beam of electrons. The electrons interact with atoms in the sample, producing various signals that contain information about the surface topography and composition."@en .
+
+:SampleHolder a owl:Class ;
+    rdfs:subClassOf chameo:CharacterisationComponent ;
+    skos:prefLabel "Instrument" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Device used for making measurements, alone or in conjunction with one or more supplementary devices."@en .
+
+
+
 
 ###  https://www.ntnu.edu/temgemini/vocab/temgo#AluminiumElectropolishing
 :AluminiumElectropolishing rdf:type owl:Class ;
@@ -130,6 +167,30 @@ Treatment steps:
                                    emmo:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc ;
                    skos:prefLabel "T8T9TreatmentTask"@en ;
                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of workflow tasks for the T8T9 treatment."@en .
+
+
+:HAADFSTEM a owl:Class ;
+    rdfs:subClassOf chameo:TransmissionElectronMicroscopy ;
+    skos:prefLabel "HAADFSTEM" ;
+    skos:altLabel "HAADF-STEM" ;
+    skos:altLabel "HighAngleAnnularDarkFieldScanningTransmissionElectronMicroscopy" ;
+    dcterms:title "High-angle annular dark-field scanning transmission electron microscopy (HAADF-STEM)" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An atomic-resolution imaging technique that uses a specialized detector to capture high-angle, incoherent scattered electrons. This method creates images where the brightness of an atomic column is directly related to its atomic number (Z-contrast), allowing for the direct interpretation of atomic-scale chemical composition without needing complex simulations, unlike conventional bright-field imaging."@en .
+
+:STEM a owl:Class ;
+    rdfs:subClassOf chameo:TransmissionElectronMicroscopy ;
+    skos:prefLabel "STEM" ;
+    skos:altLabel "ScanningTransmissionElectronMicroscopy" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An advanced imaging technique that generates high-resolution images of a sample's internal structure by scanning a focused electron beam across it and collecting transmitted signals. It provides nanoscale to atomic-level details and can acquire spectroscopic data like X-ray and electron energy loss spectra to analyze the composition of materials. STEM is similar to a conventional transmission electron microscope (TEM) in that the image is formed by electrons passing through a thin specimen, but differs in how the beam is used."@en .
+
+:SPED a owl:Class ;
+    rdfs:subClassOf chameo:TransmissionElectronMicroscopy ;
+    skos:prefLabel "SPED" ;
+    skos:altLabel "ScanningPrecissionElectronDiffraction" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A specialized method to collect electron diffraction patterns in a transmission electron microscope. By scanning over the sample and for each pixel rotating a tilted incident electron beam around the central axis of the microscope, a SPED pattern is formed by integration over a collection of diffraction conditions."@en .
+
+
+
 
 
 #################################################################
