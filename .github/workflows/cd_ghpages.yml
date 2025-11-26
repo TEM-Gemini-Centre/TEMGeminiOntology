@@ -30,11 +30,13 @@ jobs:
         pip install --upgrade pip
         pip install EMMOntoPy
 
-    - name: Install tripper
+    - name: Install temgo and tripper
       run: |
-        pip install tripper[datadoc]
+        pip install .
+        #pip install tripper[datadoc]
         #pip install -U git+https://github.com/EMMC-ASBL/tripper.git@master
         pip install -U git+https://github.com/EMMC-ASBL/tripper.git@document-selected-namespace
+
     - name: Install ROBOT
       run: |
         mkdir bin
