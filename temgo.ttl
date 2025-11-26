@@ -187,12 +187,12 @@ temgo:workingDistance a owl:DatatypeProperty ;
     skos:prefLabel "Instrument" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Device used for making measurements, alone or in conjunction with one or more supplementary devices."@en .
 
-:TransmissionElectronMicroscope ;
+:TransmissionElectronMicroscope a owl:Class ;
     rdfs:subClassOf :Instrument , chameo:CharacterisationSystem ;
     skos:prefLabel "TransmissionElectronMicroscope" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A high-resolution characterisation system that uses a beam of electrons transmitted through the sample. It provides detailed information about a sample's internal structure, morphology, and chemical composition down to the atomic level by detecting the electrons that pass through."@en .
 
-:ScanningElectronMicroscope ;
+:ScanningElectronMicroscope a owl:Class ;
     rdfs:subClassOf :Instrument, chameo:CharacterisationSystem ;
     skos:prefLabel "ScanningElectronMicroscope" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A type of electron microscope that produces images of a sample by scanning the surface with a focused beam of electrons. The electrons interact with atoms in the sample, producing various signals that contain information about the surface topography and composition."@en .
