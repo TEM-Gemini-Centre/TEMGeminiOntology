@@ -17,11 +17,12 @@
     owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
     owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
     dcterms:contributor <https://www.ntnu.edu/physmet> ;
-    dcterms:creator "Elisabeth Thronsen (SINTEF)"@en ,
-                    "Inga D. Konow (NTNU)"@en ,
-                    "Jesper Friis (SINTEF)"@en ,
-                    "Sigurd Wenner (SINTEF)"@en ,
-                    "Tor S. Haugland (SINTEF)"@en ;
+    dcterms:creator
+        <https://orcid.org/0000-0002-1560-809X> ,
+        <https://orcid.org/0000-0003-0845-0287> ,
+        <https://www.researchgate.net/profile/Elisabeth-Thronsen-2> ,
+        <https://orcid.org/0000-0002-9153-9866> ,
+        <https://www.ntnu.no/ansatte/inga.konow> ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
     dcterms:publisher <https://www.ntnu.edu/temgemini> ;
     dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;

@@ -4,6 +4,7 @@
 
     <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1"               uri="temgo.ttl"/>
     <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1/dependencies"  uri="temgo-dependencies.ttl"/>
+    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1/contributors"  uri="temgo-contributors.ttl"/>
 
   </group>
 </catalog>
