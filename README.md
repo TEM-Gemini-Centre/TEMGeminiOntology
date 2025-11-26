@@ -37,5 +37,5 @@ This work has been supported by the following projects:
 
 [List of concepts]: https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/blob/gh-pages/temgo.md
 [Reference documentation]: https://tem-gemini-centre.github.io/TEMGeminiOntology/widoco/index-en.html
-[Asserted]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
-[Inferred]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl
+[Asserted ontology]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
+[Inferred ontology]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl

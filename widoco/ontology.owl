@@ -6211,8 +6211,8 @@ This is a necessary but not sufficient condition.</emmo:EMMO_c7b62dd7_063a_4c2a_
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_38b579de_4331_40e0_803d_09efa298e726"/>
         <terms:description xml:lang="en">Categorisation of physical objects by how they are bonded.</terms:description>
         <rdfs:comment xml:lang="en">Categorisation of physical objects by how they are bonded.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">PhysicalObjectByBond</rdfs:label>
         <skos:prefLabel xml:lang="en">PhysicalObjectByBond</skos:prefLabel>
@@ -6386,8 +6386,8 @@ This is a necessary but not sufficient condition.</emmo:EMMO_c7b62dd7_063a_4c2a_
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1"/>
         <terms:description xml:lang="en">Categorisation of matter by its structure.</terms:description>
         <rdfs:comment xml:lang="en">Categorisation of matter by its structure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">MatterByStructure</rdfs:label>
         <skos:prefLabel xml:lang="en">MatterByStructure</skos:prefLabel>
@@ -6420,8 +6420,8 @@ This is a necessary but not sufficient condition.</emmo:EMMO_c7b62dd7_063a_4c2a_
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1"/>
         <terms:description xml:lang="en">Categorisation of matter by its type.</terms:description>
         <rdfs:comment xml:lang="en">Categorisation of matter by its type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">MatterByType</rdfs:label>
         <skos:prefLabel xml:lang="en">MatterByType</skos:prefLabel>
@@ -6846,8 +6846,8 @@ As another example, the joule (J) is used as a unit of energy, but never as a un
 — quantities of different quantity dimensions are always of different kinds, and
 — quantities having the same quantity dimension are not necessarily of the same kind.
 ISO 80000-1</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/isq#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">PhysicalQuantity</rdfs:label>
         <skos:prefLabel xml:lang="en">PhysicalQuantity</skos:prefLabel>
@@ -8827,7 +8827,7 @@ A set of quantites being attributed to a measurand (measured quantitative proper
 
 -- VIM</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">MeasurementResult</rdfs:label>
         <skos:prefLabel xml:lang="en">MeasurementResult</skos:prefLabel>
@@ -11169,8 +11169,8 @@ Note that the name of a compound may refer to the respective molecular entity or
         <rdfs:comment>Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
 
 Note that the name of a compound may refer to the respective molecular entity or to the chemical species,</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:isDefinedBy xml:lang="en">https://goldbook.iupac.org/terms/view/M03986</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">MolecularEntity</rdfs:label>
@@ -12616,7 +12616,7 @@ reaction sintering: process wherein at least two constituents of a powder mixtur
         <rdfs:comment>application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process</rdfs:comment>
         <rdfs:comment>application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">TechnologyProcess</rdfs:label>
         <skos:altLabel xml:lang="en">ProductionEngineeringProcess</skos:altLabel>
@@ -13429,8 +13429,8 @@ Number of apples</skos:example>
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3"/>
         <terms:description xml:lang="en">Bounded matter.</terms:description>
         <rdfs:comment xml:lang="en">Bounded matter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">ParticulateMatter</rdfs:label>
         <skos:prefLabel xml:lang="en">ParticulateMatter</skos:prefLabel>
@@ -13679,7 +13679,7 @@ e.g. you cannot remove H from H₂0 without changing the molecule type (essentia
     <owl:Class rdf:about="https://w3id.org/emmo#EMMO_3528547f_cefe_4f24_bc46_936b39f711eb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_fc859d37_408d_44b6_b345_a0ea0b65121e"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/manufacturing#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">ThermomechanicalTreatment</rdfs:label>
         <skos:prefLabel xml:lang="en">ThermomechanicalTreatment</skos:prefLabel>
@@ -14130,8 +14130,8 @@ This does not mean that there cannot be a change in the internal structure of th
 So, a photon leaving a body is not part of a convex system, while a real photon that is the carrier of clasical electromagnetic interaction between two molecular parts of the body, is part of the convex body.
 A physical phenomenon is defined as a causally non-convex interacting system, complement of causally convex interacting system.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class of individuals standing for causally convex interacting systems.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">PhysicalObject</rdfs:label>
         <skos:prefLabel xml:lang="en">PhysicalObject</skos:prefLabel>
@@ -15569,8 +15569,8 @@ A quantum may be thought as standing for an incoming or outcoming real particle 
         <terms:description xml:lang="en">The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases.</terms:description>
         <rdfs:comment xml:lang="en">A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found.</rdfs:comment>
         <rdfs:comment xml:lang="en">The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Material</rdfs:label>
         <skos:prefLabel xml:lang="en">Material</skos:prefLabel>
@@ -16195,7 +16195,7 @@ particles that are usually less than 1 mm in size</emmo:EMMO_c7b62dd7_063a_4c2a_
         <rdfs:comment xml:lang="en">A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity.</rdfs:comment>
         <rdfs:comment xml:lang="en">An &apos;observation&apos; that results in a quantitative comparison of a &apos;property&apos; of an &apos;object&apos; with a standard reference based on a well defined mesurement procedure.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Measurement</rdfs:label>
         <skos:prefLabel xml:lang="en">Measurement</skos:prefLabel>
@@ -18910,8 +18910,8 @@ Following the two examples, a marathon individual is a maximal that can be decom
         <terms:description>The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined.</terms:description>
         <rdfs:comment xml:lang="en">A composite physical object is made of bonded objects (i.e. characterised by their quantum states using a Schrodinger equation approach) that are connected together by elementary particles travelling between them. These elemenentary particles are real particles, describing the existance of a classical field (e.g. Coulomb potential between charged particles).</rdfs:comment>
         <rdfs:comment>The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">CompositePhysicalObject</rdfs:label>
         <skos:prefLabel xml:lang="en">CompositePhysicalObject</skos:prefLabel>
@@ -19380,8 +19380,8 @@ It doesn&apos;t mean that such contrasts cannot be used to deduce something: in 
 It is possible to identify more than one concept that can be reasonably labelled with the term &quot;matter&quot;. For example, it is possible to label as matter only the entities that are made up of atoms. Or more generally, we can be more fine-grained and call &quot;matter&quot; the entities that are made up of protons, neutrons or electrons, so that we can call matter also a neutron radiation or a cathode ray.
 A more fundamental approach, that we embrace for the EMMO, considers matter as entities that are made of fermions (i.e. quarks and leptons) requiring their presence, without excluding particles like the W and Z bosons that possess some mass, but are not fermions.
 Antimatter is a subclass of matter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Matter</rdfs:label>
         <skos:altLabel xml:lang="en">PhysicalSubstance</skos:altLabel>
@@ -21574,8 +21574,8 @@ A dataset as solution is a conventional sign.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://w3id.org.org/emmo#EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e"/>
         <terms:description xml:lang="en">Matter composed of only matter particles, excluding anti-matter particles.</terms:description>
         <rdfs:comment xml:lang="en">Matter composed of only matter particles, excluding anti-matter particles.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">OrdinaryMatter</rdfs:label>
         <skos:prefLabel xml:lang="en">OrdinaryMatter</skos:prefLabel>
@@ -21947,7 +21947,7 @@ In this way the &apos;sign&apos;-ed entity becomes an &apos;object&apos;, and th
         <rdfs:comment xml:lang="en">A manufacturing process aimed to modify the precursor objects through a physical process (involving other materials, energy, manipulation) to change its material properties.</rdfs:comment>
         <rdfs:comment xml:lang="en">A material process requires the output to be classified as an individual of a material subclass.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/manufacturing#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">MaterialsProcessing</rdfs:label>
         <skos:altLabel xml:lang="en">ContinuumManufacturing</skos:altLabel>
@@ -22684,8 +22684,8 @@ This can be used in material characterization, to define exactly the type of mea
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
         <terms:description xml:lang="en">The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application.</terms:description>
         <rdfs:comment xml:lang="en">The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/isq#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">CategorizedPhysicalQuantity</rdfs:label>
         <rdfs:seeAlso>https://physics.nist.gov/cuu/Constants</rdfs:seeAlso>
@@ -23237,8 +23237,8 @@ This can be used in material characterization, to define exactly the type of mea
         <rdfs:comment xml:lang="en">&quot;... in the &apos;classical&apos; picture ordinary matter is made of atoms, in which electrons are held in orbit around a nucleus of protons and neutrons by the electrical attraction of opposite charges. We can now give this model a more sophisticated formulation by attributing the binding force to the exchange of photons between the electrons and the protons in the nucleus. However, for the purposes of atomic physics this is overkill, for in this context quantization of the electromagnetic field produces only minute effects (notably the Lamb shift and the anomalous magnetic moment of the electron). To excellent approximation we can pretend that the forces are given by Coulomb&apos;s law (together with various magnetic dipole couplings). The point is that in a bound state enormous numbers of photons are continually streaming back and forth, so that the &quot;lumpiness&quot; of the field is effectively smoothed out, and classical electrodynamics is a suitable approximation to the truth. But in most elementary particle processes, such as the photoelectric effect or Compton scattering, individual photons are involved, and quantization can no longer be ignored.&quot;
 D. Griffiths, &quot;Introduction to elementary Particles&quot;, Wiley-VCH, 2004, pp.16-17</rdfs:comment>
         <rdfs:comment xml:lang="en">A bonded object is a sequence of fundamental interactions that can be described approximatively by Schrodinger formulation. A bonded object is typically characterised by having quantum states (e.g.  electron states in an atom, energy levels of a molecule). Furthermore, a bonded object is made of elementary particles that travels from the beginning to the end of the entity (i.e. a bonded object doesn&apos;t change its components).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">BondedObject</rdfs:label>
         <skos:prefLabel xml:lang="en">BondedObject</skos:prefLabel>
@@ -24986,8 +24986,8 @@ A single continuum individual can be the whole fluid in a pipe.</emmo:EMMO_c7b62
         <rdfs:subClassOf rdf:resource="https://w3id.org.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca"/>
         <rdfs:comment xml:lang="en">A composite particle is a bonded particle for which it is possible to clearly define its bosonic or fermionic behaviour. The term particle is then reserved for entities whose fermionic or bosonic nature is clearly defined.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">BondedParticle</rdfs:label>
         <skos:prefLabel xml:lang="en">BondedParticle</skos:prefLabel>
@@ -28260,7 +28260,7 @@ Symbols of a formal language must be capable of being specified without any refe
 
     <owl:Class rdf:about="https://w3id.org/emmo#EMMO_a293f923_954c_4af5_9f97_9600ebd362cb">
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">ChemicalCompositionQuantity</rdfs:label>
         <skos:prefLabel xml:lang="en">ChemicalCompositionQuantity</skos:prefLabel>
@@ -28535,7 +28535,7 @@ where r is mass ratio of water vapour to dry gas and rsat is the mass ratio of w
         <rdfs:comment xml:lang="en">Deals with entities that have a defined shape.</rdfs:comment>
         <rdfs:comment xml:lang="en">The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Manufacturing</rdfs:label>
         <rdfs:seeAlso xml:lang="en">DIN 8580:2020</rdfs:seeAlso>
@@ -28875,7 +28875,7 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
     <owl:Class rdf:about="https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a">
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">ChemicallyDefinedMaterial</rdfs:label>
         <skos:prefLabel xml:lang="en">ChemicallyDefinedMaterial</skos:prefLabel>
@@ -30901,8 +30901,8 @@ If A is a water-fluid so small that its every proper part is no more a continuum
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_57d977ab_0036_4779_b59a_e47620afdb9c"/>
         <terms:description>A composite physical object made of fermions (i.e. having mass and occupying space).</terms:description>
         <rdfs:comment>A composite physical object made of fermions (i.e. having mass and occupying space).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/materials#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Substance</rdfs:label>
         <skos:prefLabel xml:lang="en">Substance</skos:prefLabel>
@@ -31943,7 +31943,7 @@ International vocabulary of metrology (VIM)</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c
     <owl:Class rdf:about="https://w3id.org/emmo#EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04">
         <terms:description xml:lang="en">A &apos;Perceptual&apos; which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer through an optical perception employing the visible part of the electromagnetic spectrum.</terms:description>
         <rdfs:comment xml:lang="en">A &apos;Perceptual&apos; which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer through an optical perception employing the visible part of the electromagnetic spectrum.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/perceptual#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Visual</rdfs:label>
         <skos:example xml:lang="en">A cloud.
@@ -32204,7 +32204,7 @@ A mail.</skos:example>
         <terms:description xml:lang="en">A &apos;Perceptual&apos; which stands for a real world object whose spatial configuration results from an explicit graphical procedure and shows an identifiable pattern.</terms:description>
         <rdfs:comment xml:lang="en">A &apos;Perceptual&apos; which stands for a real world object whose spatial configuration results from an explicit graphical procedure and shows an identifiable pattern.</rdfs:comment>
         <rdfs:comment xml:lang="en">This concept includes only things that are purposely created by an agent.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/perceptual#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Graphical</rdfs:label>
         <skos:example xml:lang="en">&apos;Graphical&apos; objects include writings, pictures, sketches ...</skos:example>
@@ -34576,8 +34576,8 @@ Then I have two different physical quantities that are properties thanks to two 
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf"/>
         <terms:description xml:lang="en">Categorisation of quantities by their physical nature.</terms:description>
         <rdfs:comment xml:lang="en">Categorisation of quantities by their physical nature.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/isq#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">QuantityByPhysical</rdfs:label>
         <skos:hiddenLabel xml:lang="en">QuantityByPhysical</skos:hiddenLabel>
@@ -36715,7 +36715,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
         <rdfs:subClassOf rdf:resource="https://w3id.org/emmo#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <terms:description xml:lang="en">A graphical object aimed to represent schematically the conceptual, temporal or spatial structure of another object, that may or may not exist.</terms:description>
         <rdfs:comment xml:lang="en">A graphical object aimed to represent schematically the conceptual, temporal or spatial structure of another object, that may or may not exist.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/chemistry#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/perceptual#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Representation</rdfs:label>
         <skos:prefLabel xml:lang="en">Representation</skos:prefLabel>
@@ -38783,7 +38783,7 @@ fine structure constant</skos:example>
         <rdfs:comment>Manufacturing by changing the properties of the material of which a workpiece is made, which is done, among other things, by changes in the submicroscopic or atomic range, e.g. by diffusion of atoms, generation and movement of dislocations in the atomic lattice or chemical reactions, and where unavoidable changes in shape are not part of the essence of these processes.</rdfs:comment>
         <rdfs:comment>esce workpiece</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/disciplines/manufacturing#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">MaterialTreatment</rdfs:label>
         <rdfs:seeAlso xml:lang="en">DIN 8580:2020</rdfs:seeAlso>
@@ -39681,7 +39681,7 @@ It defines the Kelvin unit in the SI system.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_
         <terms:description xml:lang="en">Represents every type of data that is produced during a characterisation process</terms:description>
         <rdfs:comment xml:lang="en">Represents every type of data that is produced during a characterisation process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label>CharacterisationData</rdfs:label>
         <skos:prefLabel>CharacterisationData</skos:prefLabel>
@@ -39909,7 +39909,7 @@ NOTE 2 A measuring instrument is either an indicating measuring instrument or a 
         <rdfs:comment xml:lang="en">The measurement process associates raw data to the sample	through a probe and a detector.</rdfs:comment>
         <rdfs:comment xml:lang="en">The measurement process associates raw data to the sample	through a probe and a detector. From the International Vocabulary of Metrology (VIM): Process of experimentally obtaining one or more values that can reasonably be attributed to a quantity together with any other available relevant information. NOTE 1 The quantity mentioned in the definition is an individual quantity. NOTE 2 The relevant information mentioned in the definition may be about the values obtained by the measurement, such that some may be more representative of the measurand than others. NOTE 3 Measurement is sometimes considered to apply to nominal properties, but not in this Vocabulary, where the process of obtaining values of nominal properties is called “examination”. NOTE 4 Measurement requires both experimental comparison of quantities or experimental counting of entities at some step of the process and the use of models and calculations that are based on conceptual considerations. NOTE 5 The conditions of reasonable attribution mentioned in the definition take into account a description of the quantity commensurate with the intended use of a measurement result, a measurement procedure, and a calibrated measuring system operating according to the specified measurement procedure, including the measurement conditions. Moreover, a maximum permissible error and/or a target uncertainty may be specified, and the measurement procedure and the measuring system should then be chosen in order not to exceed these measuring system specifications.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">CharacterisationMeasurementProcess</rdfs:label>
         <skos:prefLabel xml:lang="en">CharacterisationMeasurementProcess</skos:prefLabel>
@@ -39929,7 +39929,7 @@ NOTE 2 A measuring instrument is either an indicating measuring instrument or a 
         <rdfs:comment xml:lang="en">Characterisation procedure may refer to the full characterisation process or just a part of the full process.</rdfs:comment>
         <rdfs:comment xml:lang="en">The process of performing characterisation by following some existing formalised operative rules.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">CharacterisationProcedure</rdfs:label>
         <skos:prefLabel xml:lang="en">CharacterisationProcedure</skos:prefLabel>
@@ -42138,7 +42138,7 @@ NOTE 4 A measuring system can be used as a measurement standard.</emmo:EMMO_70fe
         <terms:description xml:lang="en">The sample after a preparation process.</terms:description>
         <rdfs:comment xml:lang="en">The sample after a preparation process.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label>PreparedSample</rdfs:label>
         <skos:prefLabel>PreparedSample</skos:prefLabel>
@@ -42379,7 +42379,7 @@ NOTE 4 A measuring system can be used as a measurement standard.</emmo:EMMO_70fe
         <rdfs:comment>Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term &apos;sample&apos; implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material. Sample and Specimen are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero.</rdfs:comment>
         <rdfs:comment>Sample and Specimen are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">Sample</rdfs:label>
         <skos:altLabel>Specimen</skos:altLabel>
@@ -42560,7 +42560,7 @@ NOTE 4 A measuring system can be used as a measurement standard.</emmo:EMMO_70fe
         <terms:description xml:lang="en">Sample preparation processes (e.g., machining, polishing, cutting to size, etc.) before actual observation and measurement.</terms:description>
         <rdfs:comment xml:lang="en">Sample preparation processes (e.g., machining, polishing, cutting to size, etc.) before actual observation and measurement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/characterisation-methodology/chameo#"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/microscopy#"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emmo/domain/concrete/depencencies#"/>
         <rdfs:isDefinedBy rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#"/>
         <rdfs:label xml:lang="en">SamplePreparation</rdfs:label>
         <skos:prefLabel xml:lang="en">SamplePreparation</skos:prefLabel>
@@ -47123,27 +47123,11 @@ This axiom may be seen as Ockam&apos;s razor applied to causality.</emmo:EMMO_31
     </owl:NamedIndividual>
     <rdf:Description>
         <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
- inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
-    </rdf:Description>
-    <rdf:Description>
-        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
-    </rdf:Description>
-    <rdf:Description>
-        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
  inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
     </rdf:Description>
     <rdf:Description>
         <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
  inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
-    </rdf:Description>
-    <rdf:Description>
-        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
-    </rdf:Description>
-    <rdf:Description>
-        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
     </rdf:Description>
     <rdf:Description>
         <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
@@ -47156,9 +47140,61 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
     <rdf:Description>
         <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
 inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
+    </rdf:Description>
+    <rdf:Description>
+        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
+    </rdf:Description>
+    <rdf:Description>
+        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
+    </rdf:Description>
+    <rdf:Description>
+        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
+ inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
+    </rdf:Description>
+    <rdf:Description>
+        <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47167,10 +47203,13 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47194,55 +47233,16 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47251,31 +47251,10 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47287,7 +47266,31 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
@@ -47296,15 +47299,12 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -47312,6 +47312,9 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47332,16 +47335,16 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -47350,10 +47353,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter</emmo:EMMO_c7b62dd7
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     
 
