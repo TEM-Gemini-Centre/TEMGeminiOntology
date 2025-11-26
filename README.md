@@ -1,9 +1,12 @@
 # TEM Gemini Ontology (TEMGO)
 An EMMO-based application-level ontology that defines standardised TEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre.
 
-The ontology is available online as turtle files, either as asserted or pre-inferred (using the HermiT reasoner):
-- asserted: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
-- inferred: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl
+
+## Resources
+* [List of concepts] in TEMFO.
+* [Reference documentation] for ontology experts.
+* [Asserted ontology]
+* [Inferred ontology] (using the HermiT reasoner).
 
 
 ### Imported ontologies
@@ -29,3 +32,8 @@ This work has been supported by the following projects:
 [CHAMEO]: https://github.com/emmo-repo/domain-characterisation-methodology
 [DOM]: https://github.com/emmo-repo/domain-microscopy
 [MDO]: https://github.com/emmo-repo/domain-microstructure
+
+[List of concepts]: https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/blob/gh-pages/temgo.md
+[Reference documentation]: https://tem-gemini-centre.github.io/TEMGeminiOntology/widoco/index-en.thml
+[Asserted]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo.ttl
+[Inferred]: https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-inferred.ttl
