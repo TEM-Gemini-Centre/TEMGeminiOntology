@@ -38,131 +38,131 @@
 
 
 temgo:accelerationVoltage a owl:DatatypeProperty ;
-    rdfs:label "accelerationVoltage" ;
-    dcterms:description "Electron acceleration voltage" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "accelerationVoltage" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electron acceleration voltage" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "V" .
 
 temgo:apertureDiameterObjective a owl:DatatypeProperty ;
-    rdfs:label "apertureDiameterObjective" ;
-    dcterms:description "Diameter of objective aperture" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "apertureDiameterObjective" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Diameter of objective aperture" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
 temgo:beamCurrent a owl:DatatypeProperty ;
-    rdfs:label "beamCurrent" ;
-    dcterms:description "Current of the electron beam" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "beamCurrent" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Current of the electron beam" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "A" ;
     temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
 
 temgo:detectorMode a owl:DatatypeProperty ;
-    rdfs:label "detectorMode" ;
-    dcterms:description "Detecor's mode, e.g., SE" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "detectorMode" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Detecor's mode, e.g., SE" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
 temgo:detectorName a owl:DatatypeProperty ;
-    rdfs:label "detectorName" ;
-    dcterms:description "Detecor's name, e.g., ETD" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "detectorName" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Detecor's name, e.g., ETD" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
 temgo:dwellTime a owl:DatatypeProperty ;
-    rdfs:label "dwellTime" ;
-    dcterms:description "Beam dwell time on each pixel during scan." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "dwellTime" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Beam dwell time on each pixel during scan." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "s" ;
     temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
         temgo:STEM .
 
 temgo:electronSource a owl:DatatypeProperty ;
-    rdfs:label "electronSource" ;
-    dcterms:description "Electron source, e.g., FEG" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "electronSource" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electron source, e.g., FEG" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
 temgo:instrument a owl:ObjectProperty ;
-    rdfs:label "instrument" ;
-    dcterms:description "Reference to the instrument" ;
+    skos:prefLabel "instrument" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to the instrument" ;
     rdfs:domain dcat:Resource ;
     rdfs:range temgo:Instrument .
 
 temgo:lineIntegration a owl:DatatypeProperty ;
-    rdfs:label "lineIntegration" ;
-    dcterms:description "Number of times each line was scanned for intensity integration." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "lineIntegration" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Number of times each line was scanned for intensity integration." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:integer ;
     temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
         temgo:STEM .
 
 temgo:magnification a owl:DatatypeProperty ;
-    rdfs:label "magnification" ;
-    dcterms:description "Magnification" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "magnification" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Magnification" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double .
 
 temgo:sampleHolder a owl:ObjectProperty ;
-    rdfs:label "sampleHolder" ;
-    dcterms:description "Reference to sample holder" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "sampleHolder" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to sample holder" ;
+    rdfs:domain :Instrument ;
     rdfs:range temgo:SampleHolder ;
     temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
 
 temgo:stagePositionX a owl:DatatypeProperty ;
-    rdfs:label "PositionX" ;
-    dcterms:description "X position of the stage/specimen relative to origin" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "PositionX" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "X position of the stage/specimen relative to origin" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
 temgo:stagePositionY a owl:DatatypeProperty ;
-    rdfs:label "PositionY" ;
-    dcterms:description "Y position of the stage/specimen relative to origin" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "PositionY" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Y position of the stage/specimen relative to origin" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
 temgo:stagePositionZ a owl:DatatypeProperty ;
-    rdfs:label "PositionZ" ;
-    dcterms:description "Z position of the stage/specimen relative to origin" ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "PositionZ" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Z position of the stage/specimen relative to origin" ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
 temgo:stageRotation a owl:DatatypeProperty ;
-    rdfs:label "stageRotation" ;
-    dcterms:description "In-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "stageRotation" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" ;
     temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
 
 temgo:stageTiltX a owl:DatatypeProperty ;
-    rdfs:label "TiltX" ;
-    dcterms:description "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "TiltX" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" .
 
 temgo:stageTiltY a owl:DatatypeProperty ;
-    rdfs:label "TiltY" ;
-    dcterms:description "Tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "TiltY" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" ;
     temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
 
 temgo:workingDistance a owl:DatatypeProperty ;
-    rdfs:label "workingDistance" ;
-    dcterms:description "Distance between the sample and the electron polepiece." ;
-    rdfs:domain dcat:Resource ;
+    skos:prefLabel "workingDistance" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Distance between the sample and the electron polepiece." ;
+    rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
-    ddoc:unit "?m" ;
+    ddoc:unit "m" ;
     temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
 
 
@@ -199,8 +199,8 @@ temgo:workingDistance a owl:DatatypeProperty ;
 
 :SampleHolder a owl:Class ;
     rdfs:subClassOf chameo:CharacterisationComponent ;
-    skos:prefLabel "Instrument" ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Device used for making measurements, alone or in conjunction with one or more supplementary devices."@en .
+    skos:prefLabel "SampleHolder" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Holder for samples in a characterisation system."@en .
 
 
 

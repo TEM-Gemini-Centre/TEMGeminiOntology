@@ -6,6 +6,7 @@ on:
 env:
   ONTOLOGY_NAME: temgo
   ONTOLOGY_IRI: https://www.ntnu.edu/temgemini/vocab/temgo
+  ONTOLOGY_THEME: ddoc:temgo
 
 permissions:
   contents: write
@@ -63,6 +64,7 @@ jobs:
             -sawe \
             --base-iri="${ONTOLOGY_IRI}#" \
             --iri="${ONTOLOGY_IRI}" \
+            --copy-annotation="elucidation-->http://purl.org/dc/terms/description" \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}.ttl
 
@@ -86,12 +88,12 @@ jobs:
 
     - name: Generate markdown documentation of all keywords
       run: |
-        keywords -i temgo.ttl --keywords build/temgo.md --theme ddoc:temgo --redefine=allow
+        keywords -i ${ONTOLOGY_NAME}.ttl --keywords build/${ONTOLOGY_NAME}.md --theme=${ONTOLOGY_THEME} --redefine=allow
 
     - name: Generate Widoco documentation
       run: |
         java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile temgo.ttl \
+            -ontFile build/${ONTOLOGY_NAME}.ttl \
             -outFolder build/widoco \
             -getOntologyMetadata \
             -rewriteAll \
