@@ -24,6 +24,8 @@ license (CC BY 4.0).
 ### Acknowledgement
 This work has been supported by the following projects:
   - [SFI PhysMet](https://www.ntnu.edu/physmet/) (2020-2028) that receives funding from the Research Council of Norway, project no. 309584.
+  - [MarketPlace](https://www.the-marketplace-project.eu) (2018-2022) that receives funding from the European Union’s Horizon 2020 Research and Innovation Programme, under Grant Agreement n. 760173.
+  -
 
 
 [EMMO]: https://github.com/emmo-repo/EMMO
