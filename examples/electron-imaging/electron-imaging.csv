@@ -1,0 +1,19 @@
+@id;@type;label;domain;range;ddoc:unit;description;relatedTechnique;relatedTechnique
+temgo:instrument;owl:ObjectProperty;instrument;dcat:Resource;temgo:Instrument;;Reference to the instrument;;
+temgo:sampleHolder;owl:ObjectProperty;sampleHolder;dcat:Resource;temgo:SampleHolder;;Reference to sample holder;chameo:TransmissionElectronMicroscopy;
+temgo:detectorName;owl:DatatypeProperty;detectorName;dcat:Resource;xsd:string;;Detecor's name, e.g., ETD;;
+temgo:detectorMode;owl:DatatypeProperty;detectorMode;dcat:Resource;xsd:string;;Detecor's mode, e.g., SE;;
+temgo:electronSource;owl:DatatypeProperty;electronSource;dcat:Resource;xsd:string;;Electron source, e.g., FEG;;
+temgo:accelerationVoltage;owl:DatatypeProperty;accelerationVoltage;dcat:Resource;xsd:double;V;Electron acceleration voltage;;
+temgo:magnification;owl:DatatypeProperty;magnification;dcat:Resource;xsd:double;;Magnification;;
+temgo:workingDistance;owl:DatatypeProperty;workingDistance;dcat:Resource;xsd:double;?m;Distance between the sample and the electron polepiece.;chameo:ScanningElectronMicroscopy;
+temgo:dwellTime;owl:DatatypeProperty;dwellTime;dcat:Resource;xsd:double;s;Beam dwell time on each pixel during scan.;chameo:ScanningElectronMicroscopy;temgo:STEM
+temgo:beamCurrent;owl:DatatypeProperty;beamCurrent;dcat:Resource;xsd:double;A;Current of the electron beam;chameo:ScanningElectronMicroscopy;
+temgo:stagePositionX;owl:DatatypeProperty;PositionX;dcat:Resource;xsd:double;m;X position of the stage/specimen relative to origin;;
+temgo:stagePositionY;owl:DatatypeProperty;PositionY;dcat:Resource;xsd:double;m;Y position of the stage/specimen relative to origin;;
+temgo:stagePositionZ;owl:DatatypeProperty;PositionZ;dcat:Resource;xsd:double;m;Z position of the stage/specimen relative to origin;;
+temgo:stageRotation;owl:DatatypeProperty;stageRotation;dcat:Resource;xsd:double;degree;In-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise.;chameo:ScanningElectronMicroscopy;
+temgo:stageTiltX;owl:DatatypeProperty;TiltX;dcat:Resource;xsd:double;degree;Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise.;;
+temgo:stageTiltY;owl:DatatypeProperty;TiltY;dcat:Resource;xsd:double;degree;Tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise.;chameo:TransmissionElectronMicroscopy;
+temgo:apertureDiameterObjective;owl:DatatypeProperty;apertureDiameterObjective;dcat:Resource;xsd:double;m;Diameter of objective aperture;;
+temgo:lineIntegration;owl:DatatypeProperty;lineIntegration;dcat:Resource;xsd:integer;;Number of times each line was scanned for intensity integration.;chameo:ScanningElectronMicroscopy;temgo:STEM

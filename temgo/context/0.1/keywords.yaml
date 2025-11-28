@@ -1,0 +1,102 @@
+---
+basedOn: ddoc:prefixes
+
+prefixes:
+  temgo: https://www.ntnu.edu/temgemini/vocab/temgo#
+  mdo: https://w3id.org/emmo/domain/microstructure#
+  emmo: https://w3id.org/emmo#
+
+resources:
+  Alloy:
+    iri: https://w3id.org/emmo/domain/microstructure#EMMO_e25884df-decb-52e1-b8c0-f5092dd40066
+    description: Mixture with metallic character composed of two or more elements of which at least one is a metal.
+    keywords:
+      alloyName:
+        iri: dcterms:identifier
+        range: https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
+        description: Identifier of the material.
+
+      hasSingleComponentComposition:
+        iri: https://w3id.org/emmo#EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5
+        # emmo:SingleComponentComposition
+        range: https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2
+        description: Relates an alloy to the amount of one of its elements.
+
+      heatTreatment:
+        iri: mdo:hasHeatTreatmentLabel
+        range: rdfs:Literal
+        datatype: xsd:string
+        description: A label for the heat treatment process.
+
+      notes:
+        iri: skos:note
+        range: rdfs:Literal
+        datatype: rdf:langString
+        description: A general note, for any purpose.
+
+      producedBy:
+        # isManufacturedBy
+        iri: https://w3id.org/emmo#EMMO_89c5fd4c_c7b5_4fde_bca8_7734cbda777a
+        # Manufacturer
+        range: https://w3id.org/emmo#EMMO_c0afb341_7d31_4883_a307_ae4606df2a1b
+        description: The manufacturer of the alloy.
+
+      productionMethod:
+        # inverse(hasManufacturedOutput)
+        iri: https://w3id.org/emmo#EMMO_0e86a108_9d4d_4582_8126_f0c527d81901
+        inverse: true
+        # Manufacturing
+        range: https://w3id.org/emmo#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b
+        description: The production method manufacturing method
+
+      received:
+        iri: temgo:dataOfReceival
+        range: rdfs:Literal
+        #datatype: xsd:dateTime
+        description: The data an object is received.
+
+      studiedBy:
+        iri: temgo:studiedBy
+        range: rdfs:Literal
+        datatype: xsd:string
+        description: Name of person who studied the documented object.
+
+      studiedFor:
+        iri: temgo:studiedFor
+        range: rdfs:Literal
+        datatype: xsd:string
+        description: Description about what the documented object is studied for.
+
+
+  Property:
+    iri: rdf:Property
+    description: The class of RDF properties.
+    keywords:
+      relatedTechnique:
+        iri: temgo:relatedTechnique
+        range: chameo:CharacterisationTechnique
+        description: Relates a property to a characterisation technique that this property is relevant for.
+
+
+  SingleComponentComposition:
+    iri: https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2
+    description: The fraction or amount of a single constituent of a substance.
+    keywords:
+      hasSIQuantityValue:
+        iri: https://w3id.org/emmo#EMMO_42806efc_581b_4ff8_81b0_b4d62153458b
+        range: rdfs:Literal
+        # emmo:SIQuantityDatatype
+        datatype: https://w3id.org/emmo#EMMO_799c067b_083f_4365_9452_1f1433b03676
+        description: "Relates a physical quantity to its value specified as a string consisting of a numerical, a separator and a unit. Ex: '3 cm'."
+
+      chemicalSymbol:
+        iri: temgo:chemicalSymbol
+        range: rdfs:Literal
+        datatype: xsd:string
+        description: Chemical symbol.
+
+      hasChemicalSpecies:
+        iri: https://w3id.org/emmo#EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c
+        # emmo:ChemicalSpecies
+        range: https://w3id.org/emmo#EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689
+        description: A symbolic construct that stands for a chemical species.

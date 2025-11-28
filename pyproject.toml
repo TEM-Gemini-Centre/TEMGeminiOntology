@@ -1,0 +1,53 @@
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "temgo"
+description = "TEM Gemini Ontology (TEMGO)."
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Environment :: Plugins",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+]
+keywords = ["TEM Gemini Centre", "ontology"]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dynamic = ["version"]
+
+dependencies = [
+    "tripper[datadoc]",
+]
+
+[project.optional-dependencies]
+alloytable = [
+    "pandas",
+]
+
+
+[project.urls]
+Home = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology"
+Documentation = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology"
+Source = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology"
+"Issue Tracker" = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/issues"
+Changelog = "https://github.com/TEM-Gemini-Centre/TEMGeminiOntology/blob/master/CHANGELOG.md"
+#Package = "https://pypi.org/project/temgo"
+
+
+[tool.setuptools.package-data]
+"temgo.context" = ["*.json", "*.yaml"]
+
+
+# Note the quotes around dlite.python_storage_plugins to escape the embedded dot
+[project.entry-points."tripper.keywords"]
+"temgo/context/0.1/keywords.yaml" = "ddoc:temgo"
