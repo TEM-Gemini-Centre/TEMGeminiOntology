@@ -4631,10 +4631,10 @@ temgo:T8T9Aging1 a owl:Class ;
     rdfs:comment "First aging step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_duration ;
+            owl:hasValue temgo:t8t9aging1_temp ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_temp ;
+            owl:hasValue temgo:t8t9aging1_duration ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
