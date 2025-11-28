@@ -17,6 +17,8 @@ Version dependencies on imported ontologies:
 | Version | [EMMO] | [CHAMEO] | [MDO] | [DOM] |
 |---------|--------|----------|-------|-------|
 | 0.0.1   | 1.0.0  | 1.0.0    | 0.3.1 | 0.0.1 |
+| 0.1.0   | 1.0.0  | 1.0.0    | 0.3.1 | 0.0.1 |
+
 
 
 ## License
