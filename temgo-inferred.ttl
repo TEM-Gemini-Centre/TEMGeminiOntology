@@ -4690,7 +4690,7 @@ foaf:Person rdf:type owl:Class ;
                                                                       rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 ;
                                                                       rdfs:comment "Categorisation of physical objects by how they are bonded."@en ;
                                                                       rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                                       <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                                       <https://w3id.org/emmo/domain/microscopy#> ,
                                                                                        <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                                       rdfs:label "PhysicalObjectByBond"@en ;
                                                                       skos:prefLabel "PhysicalObjectByBond"@en ;
@@ -4815,7 +4815,7 @@ foaf:Person rdf:type owl:Class ;
                                                                       rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
                                                                       rdfs:comment "Categorisation of matter by its structure."@en ;
                                                                       rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                                       <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                                       <https://w3id.org/emmo/domain/microscopy#> ,
                                                                                        <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                                       rdfs:label "MatterByStructure"@en ;
                                                                       skos:prefLabel "MatterByStructure"@en ;
@@ -4839,7 +4839,7 @@ foaf:Person rdf:type owl:Class ;
                                                                       rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
                                                                       rdfs:comment "Categorisation of matter by its type."@en ;
                                                                       rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                                       <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                                       <https://w3id.org/emmo/domain/microscopy#> ,
                                                                                        <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                                       rdfs:label "MatterByType"@en ;
                                                                       skos:prefLabel "MatterByType"@en ;
@@ -6041,7 +6041,7 @@ emmo:EMMO_09f0ac34_c349_46b5_acf0_0edeae52cca1 rdf:type owl:Class ;
                                                owl:disjointWith emmo:EMMO_0f19d84e_05b4_47c9_a5de_bb2a913d211b ;
                                                rdfs:comment "A causally bonded system is a system in which there are at least two causal paths that are interacting."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "InteractingSystem"@en ;
                                                skos:prefLabel "InteractingSystem"@en ;
@@ -8415,8 +8415,8 @@ Note that the name of a compound may refer to the respective molecular entity or
                                                             """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
 
 Note that the name of a compound may refer to the respective molecular entity or to the chemical species,""" ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/chemistry#> ,
+                                                                <https://w3id.org/emmo/disciplines/materials#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ,
                                                                 "https://goldbook.iupac.org/terms/view/M03986"@en ;
                                                rdfs:label "MolecularEntity"@en ;
@@ -10125,8 +10125,8 @@ emmo:EMMO_32f55395_8b94_40de_a103_bffa5c121d98 rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe> ,
                                                                emmo:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 ;
                                                rdfs:comment "Bounded matter."@en ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/chemistry#> ,
+                                                                <https://w3id.org/emmo/disciplines/materials#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ParticulateMatter"@en ;
                                                skos:prefLabel "ParticulateMatter"@en ;
@@ -10645,7 +10645,7 @@ So, a photon leaving a body is not part of a convex system, while a real photon 
 A physical phenomenon is defined as a causally non-convex interacting system, complement of causally convex interacting system."""@en ,
                                                             "The class of individuals standing for causally convex interacting systems."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "PhysicalObject"@en ;
                                                skos:prefLabel "PhysicalObject"@en ;
@@ -11748,7 +11748,7 @@ emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 rdf:type owl:Class ;
                                                rdfs:comment "A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en ,
                                                             "The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Material"@en ;
                                                skos:prefLabel "Material"@en ;
@@ -12310,7 +12310,7 @@ emmo:EMMO_46dc0d51_b60f_49cd_8650_9aba7be3726c rdf:type owl:Class ;
 emmo:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
                                                rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 3-dimensional Euclidean space."@en ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/domain/microstructure#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/geometrical#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ThreeManifold"@en ;
                                                skos:altLabel "3-manifold"@en ;
@@ -14285,7 +14285,7 @@ emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdf:type owl:Class ;
                                                rdfs:comment "A composite physical object is made of bonded objects (i.e. characterised by their quantum states using a Schrodinger equation approach) that are connected together by elementary particles travelling between them. These elemenentary particles are real particles, describing the existance of a classical field (e.g. Coulomb potential between charged particles)."@en ,
                                                             "The class of physical objects possessing a structure that is larger than a single composite particle, for which its bosonic or fermionic nature is undetermined." ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CompositePhysicalObject"@en ;
                                                skos:prefLabel "CompositePhysicalObject"@en ;
@@ -14637,7 +14637,7 @@ It is possible to identify more than one concept that can be reasonably labelled
 A more fundamental approach, that we embrace for the EMMO, considers matter as entities that are made of fermions (i.e. quarks and leptons) requiring their presence, without excluding particles like the W and Z bosons that possess some mass, but are not fermions.
 Antimatter is a subclass of matter."""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Matter"@en ;
                                                skos:altLabel "PhysicalSubstance"@en ;
@@ -16297,7 +16297,7 @@ emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e> ;
                                                rdfs:comment "Matter composed of only matter particles, excluding anti-matter particles."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "OrdinaryMatter"@en ;
                                                skos:prefLabel "OrdinaryMatter"@en ;
@@ -16963,7 +16963,7 @@ emmo:EMMO_76bd5e44_bf5a_49f9_a517_eea5e8bcbc2d rdf:type owl:Class ;
                                                             "The disjoint union of the CausalSystem and Collection classes."@en ,
                                                             "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CausalCluster"@en ;
                                                skos:prefLabel "CausalCluster"@en ;
@@ -17534,8 +17534,8 @@ emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca rdf:type owl:Class ;
                                                rdfs:comment """\"... in the 'classical' picture ordinary matter is made of atoms, in which electrons are held in orbit around a nucleus of protons and neutrons by the electrical attraction of opposite charges. We can now give this model a more sophisticated formulation by attributing the binding force to the exchange of photons between the electrons and the protons in the nucleus. However, for the purposes of atomic physics this is overkill, for in this context quantization of the electromagnetic field produces only minute effects (notably the Lamb shift and the anomalous magnetic moment of the electron). To excellent approximation we can pretend that the forces are given by Coulomb's law (together with various magnetic dipole couplings). The point is that in a bound state enormous numbers of photons are continually streaming back and forth, so that the \"lumpiness\" of the field is effectively smoothed out, and classical electrodynamics is a suitable approximation to the truth. But in most elementary particle processes, such as the photoelectric effect or Compton scattering, individual photons are involved, and quantization can no longer be ignored.\"
 D. Griffiths, \"Introduction to elementary Particles\", Wiley-VCH, 2004, pp.16-17"""@en ,
                                                             "A bonded object is a sequence of fundamental interactions that can be described approximatively by Schrodinger formulation. A bonded object is typically characterised by having quantum states (e.g.  electron states in an atom, energy levels of a molecule). Furthermore, a bonded object is made of elementary particles that travels from the beginning to the end of the entity (i.e. a bonded object doesn't change its components)."@en ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/chemistry#> ,
+                                                                <https://w3id.org/emmo/disciplines/materials#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "BondedObject"@en ;
                                                skos:prefLabel "BondedObject"@en ;
@@ -18871,8 +18871,8 @@ emmo:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59> ,
                                                                emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca ;
                                                rdfs:comment "A composite particle is a bonded particle for which it is possible to clearly define its bosonic or fermionic behaviour. The term particle is then reserved for entities whose fermionic or bosonic nature is clearly defined."@en ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/chemistry#> ,
+                                                                <https://w3id.org/emmo/disciplines/materials#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "BondedParticle"@en ;
                                                skos:prefLabel "BondedParticle"@en ;
@@ -21782,7 +21782,7 @@ emmo:EMMO_a94aec97_71ff_4574_b111_a52d77d2c230 rdf:type owl:Class ;
 emmo:EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ChemicallyDefinedMaterial"@en ;
                                                skos:prefLabel "ChemicallyDefinedMaterial"@en .
@@ -22507,7 +22507,7 @@ emmo:EMMO_b295158f_fda4_4124_ab58_d9ea4ccfca5a rdf:type owl:Class ;
                                                rdfs:comment "A causal system posessing bonding that can not be representated by a simple Feynman diagram."@en ,
                                                             "A generic physical system is everything which is more complex than a scattering interaction, or a decay/annihilation event, which are represented by a single Feynman diagram."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "GenericPhysicalSystem"@en ;
                                                skos:prefLabel "GenericPhysicalSystem"@en ;
@@ -22822,7 +22822,7 @@ emmo:EMMO_b5523f03_5f2f_4e11_92c0_3734c6de3749 rdf:type owl:Class ;
 emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
                                                rdfs:comment "A 'graphical' aimed to represent a geometrical concept."@en ;
-                                               rdfs:isDefinedBy <https://w3id.org/emmo/domain/microstructure#> ,
+                                               rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/geometrical#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Geometrical"@en ;
                                                skos:example """A geometrical object can be expressed in many different forms.
@@ -23320,7 +23320,7 @@ emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 rdf:type owl:Class ;
                                                                emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c ;
                                                rdfs:comment "A composite physical object made of fermions (i.e. having mass and occupying space)." ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Substance"@en ;
                                                skos:prefLabel "Substance"@en ;
@@ -27131,7 +27131,7 @@ emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac rdf:type owl:Class ;
 A causal system is always a spatial-like structure, and is represented as a multiple topologically orderable direct acyclic graph, with quanta as nodes and causality relations as edges."""@en ,
                                                             "The class of individuals representing a causal system."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/concrete/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CausalSystem"@en ;
                                                skos:example "A electron binded by a nucleus."@en ;
@@ -35207,7 +35207,7 @@ temgo:t8t9deformation_strain rdf:type owl:NamedIndividual ,
 
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
+ inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
 ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
@@ -35223,7 +35223,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
@@ -35231,30 +35231,15 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
- ] .
-
-[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
- ] .
-
-[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
  inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
  ] .
 
-[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -35266,25 +35251,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
@@ -35293,121 +35260,43 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
@@ -35428,16 +35317,127 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
