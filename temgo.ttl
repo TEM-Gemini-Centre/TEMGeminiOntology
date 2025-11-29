@@ -13,6 +13,7 @@
 @prefix temgo: <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
