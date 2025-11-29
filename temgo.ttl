@@ -45,38 +45,38 @@
 
 # Contributors not already defined in dependencies
 <https://orcid.org/0000-0002-1560-809X> rdf:type foaf:Person ;
-    skos:altLabel "Jesper Friis" ;
-    skos:prefLabel "JesperFriis" ;
+    skos:altLabel "JesperFriis" ;
+    skos:prefLabel "Jesper Friis" ;
     foaf:name "Jesper Friis" ;
     foaf:workplaceHomepage <https://www.sintef.no/en/> .
 
 <https://www.researchgate.net/profile/Elisabeth-Thronsen-2> a foaf:Person ;
-    skos:altLabel "Elisabeth Thronsen" ;
-    skos:prefLabel "ElisabethThronsen" ;
+    skos:altLabel "ElisabethThronsen" ;
+    skos:prefLabel "Elisabeth Thronsen" ;
     foaf:name "Elisabeth Thronsen" ;
     foaf:workplaceHomepage <https://www.sintef.no/en> .
 
 <https://orcid.org/0000-0003-0845-0287> a foaf:Person ;
-    skos:altLabel "Sigurd Wenner" ;
-    skos:prefLabel "SigurdWenner" ;
+    skos:altLabel "SigurdWenner" ;
+    skos:prefLabel "Sigurd Wenner" ;
     foaf:name "Sigurd Wenner" ;
     foaf:workplaceHomepage <https://www.sintef.no/en> .
 
 <https://orcid.org/0000-0002-9153-9866> a foaf:Person ;
-    skos:altLabel "Tor Strømsem Haugland" ;
-    skos:prefLabel "TorHaugland" ;
+    skos:altLabel "TorHaugland" ;
+    skos:prefLabel "Tor Strømsem Haugland" ;
     foaf:name "Tor Strømsem Haugland" ;
     foaf:workplaceHomepage <https://www.sintef.no/en> .
 
 <https://www.ntnu.no/ansatte/inga.konow> a foaf:Person ;
-    skos:altLabel "Inga D. Konow" ;
-    skos:prefLabel "IngaKonow" ;
+    skos:altLabel "IngaKonow" ;
+    skos:prefLabel "Inga D. Konow" ;
     foaf:name "Inga D. Konow" ;
     foaf:workplaceHomepage <https://www.ntnu.edu/> .
 
 <https://www.ntnu.edu/temgemini> a foaf:Organization ;
-    skos:altLabel "TEM Gemini Centre" ;
-    skos:prefLabel "TEMGeminiCentre" ;
+    skos:altLabel "TEMGeminiCentre" ;
+    skos:prefLabel "TEM Gemini Centre" ;
     foaf:name "TEM Gemini Centre" ;
     foaf:logo <https://www.ntnu.edu/documents/140131/35821926/temgemini_logo01.jpg> ;
     foaf:homepage <https://www.ntnu.edu/temgemini> ;
