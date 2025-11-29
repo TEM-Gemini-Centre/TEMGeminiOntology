@@ -1,7 +1,8 @@
 name: Deploy on GitHub Pages
-on:
-  push:
-    branches: [master]
+on: push
+#on:
+#  push:
+#    branches: [master]
 
 env:
   ONTOLOGY_NAME: temgo
@@ -112,10 +113,13 @@ jobs:
             -ontFile build/${ONTOLOGY_NAME}-doc.ttl \
             -outFolder build/widoco \
             -getOntologyMetadata \
+            -oops \
             -rewriteAll \
             -saveConfig build/widoco/widoco.conf \
+            - webVowl \
             -licensius \
             -includeAnnotationProperties
+
 
 
     - name: Deploy to GitHub Pages
