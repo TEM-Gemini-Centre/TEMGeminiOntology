@@ -27,7 +27,7 @@ International](https://creativecommons.org/licenses/by/4.0/legalcode)
 license (CC BY 4.0).
 
 
-### Acknowledgement
+### Acknowledgment
 This work has been supported by the following projects:
   - [TEM Gemini Centre](https://www.ntnu.edu/temgemini/) is the Trondheim node of [NORTEM](https://nortem.no/) that is funded by the Research Council of Norway.
   - [SFI PhysMet](https://www.ntnu.edu/physmet/) (2020-2028) that receives funding from the Research Council of Norway, project no. 309584.

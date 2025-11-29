@@ -1,5 +1,5 @@
 ---
-basedOn: ddoc:prefixes
+basedOn: ["ddoc:prefixes", "ddoc:process"]
 
 prefixes:
   temgo: https://www.ntnu.edu/temgemini/vocab/temgo#
@@ -10,6 +10,7 @@ resources:
   Alloy:
     iri: https://w3id.org/emmo/domain/microstructure#EMMO_e25884df-decb-52e1-b8c0-f5092dd40066
     description: Mixture with metallic character composed of two or more elements of which at least one is a metal.
+    usageNote: The keywords `manufacturedBy` and `manufacturedWith` can be used to related to the manufacturer of the alloy and the manufacturing process it was produced with, respectively.
     keywords:
       alloyName:
         iri: dcterms:identifier
@@ -34,32 +35,16 @@ resources:
         datatype: rdf:langString
         description: A general note, for any purpose.
 
-      producedBy:
-        # isManufacturedBy
-        iri: https://w3id.org/emmo#EMMO_89c5fd4c_c7b5_4fde_bca8_7734cbda777a
-        # Manufacturer
-        range: https://w3id.org/emmo#EMMO_c0afb341_7d31_4883_a307_ae4606df2a1b
-        description: The manufacturer of the alloy.
-
-      productionMethod:
-        # inverse(hasManufacturedOutput)
-        iri: https://w3id.org/emmo#EMMO_0e86a108_9d4d_4582_8126_f0c527d81901
-        inverse: true
-        # Manufacturing
-        range: https://w3id.org/emmo#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b
-        description: The production method manufacturing method
-
-      received:
-        iri: temgo:dataOfReceival
+      receivedDate:
+        iri: temgo:dateOfReceival
         range: rdfs:Literal
-        #datatype: xsd:dateTime
+        #datatype: xsd:date
         description: The data an object is received.
 
       studiedBy:
         iri: temgo:studiedBy
-        range: rdfs:Literal
-        datatype: xsd:string
-        description: Name of person who studied the documented object.
+        range: foaf:Agent
+        description: The person who studied the documented object.
 
       studiedFor:
         iri: temgo:studiedFor
