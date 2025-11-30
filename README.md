@@ -21,6 +21,21 @@ Version dependencies on imported ontologies:
 
 
 
+## Python integration
+TEMGO is an application ontology. But it includes a json-ld context and a keywords file that can be made available to python applications by installing TEMGO as a Python package:
+
+    pip install git+https://github.com/TEM-Gemini-Centre/TEMGeminiOntology.git@master
+
+
+### Developers
+As a developer, may want to install [pre-commit] to automatically synchronise the json-ld context and documentation to the ontology expressed in the turtle files.
+
+    pip install pre-commit
+    pre-commit intstall
+
+
+
+
 ## License
 This ontology is released under the [Creative Commons Attribution 4.0
 International](https://creativecommons.org/licenses/by/4.0/legalcode)
