@@ -614,8 +614,6 @@ emmo:EMMO_246af1cb_2f80_4ff7_9add_c1dd4cfdcc93 rdfs:isDefinedBy <https://www.ntn
 
 emmo:EMMO_24788d59_32f5_4339_a42a_43a102ec14a8 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
-emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
-
 emmo:EMMO_24b30ba4_90f4_423d_93d2_fd0fde349087 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 emmo:EMMO_24c44d2c_9ec3_438d_8cff_348cb9d7cb5c rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
@@ -4275,20 +4273,30 @@ emmo:emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e rdfs:isDefinedBy <https://www.ntn
 <https://w3id.org/emmo/domain/microstructure#EMMO_fc7ad1c6-73e2-5525-9116-e4aee2f0dfc7> rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> a owl:Ontology ;
+    rdfs:label "TEMGO"@en ;
+    dcterms:abstract "The TEM Gemini Ontology (TEMGO) provides a standardised taxonomy and vocabulary for TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre."@en ;
     dcterms:contributor <https://www.ntnu.edu/physmet> ;
+    dcterms:created "2025-05-09"^^xsd:string ;
     dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
         <https://orcid.org/0000-0002-9153-9866>,
         <https://orcid.org/0000-0003-0845-0287>,
         <https://www.ntnu.no/ansatte/inga.konow>,
         <https://www.researchgate.net/profile/Elisabeth-Thronsen-2> ;
+    dcterms:description "An EMMO-based application-level ontology that defines standardised TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre."@en ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
     dcterms:publisher <https://www.ntnu.edu/temgemini> ;
     dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
+    bibo:doi temgo: ;
+    bibo:status <http://purl.org/adms/status/UnderDevelopment> ;
     vann:preferredNamespacePrefix "temgo"^^xsd:string ;
     vann:preferredNamespaceUri "https://www.ntnu.edu/temgemini/vocab/temgo"^^xsd:string ;
+    rdfs:seeAlso <https://w3id.org/emmo/domain/microscopy> ;
     owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
+    owl:priorVersion ""@en ;
     owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
-    owl:versionInfo "0.0.1"@en .
+    owl:versionInfo "0.0.1"@en ;
+    foaf:fundedBy <https://he-matchmaker.eu>,
+        <https://www.forskningsradet.no> .
 
 temgo:AluminiumElectropolishing a owl:Class ;
     rdfs:label "AluminiumElectropolishing"@en ;
@@ -4411,6 +4419,18 @@ temgo:beamCurrent a owl:DatatypeProperty ;
     ns1:unit "A"^^xsd:string ;
     temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy> .
 
+temgo:dateOfReceival a owl:DatatypeProperty ;
+    rdfs:label "dateOfReceival"@en ;
+    dcterms:description "The date an object is received."@en ;
+    rdfs:comment "The date an object is received."@en ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:altLabel "receivedDate"@en ;
+    skos:prefLabel "dateOfReceival"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
+
 temgo:detectorMode a owl:DatatypeProperty ;
     rdfs:label "detectorMode"^^xsd:string ;
     dcterms:description "Detecor's mode, e.g., SE"^^xsd:string ;
@@ -4453,17 +4473,6 @@ temgo:electronSource a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:prefLabel "electronSource"^^xsd:string ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electron source, e.g., FEG"^^xsd:string .
-
-temgo:hasDateOfReceival a owl:DatatypeProperty ;
-    rdfs:label "hasDateOfReceival"@en ;
-    dcterms:description "The date an object is received."@en ;
-    rdfs:comment "The date an object is received."@en ;
-    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
-    rdfs:isDefinedBy temgo: ;
-    rdfs:range xsd:dateTime ;
-    rdfs:subPropertyOf owl:topDataProperty ;
-    skos:prefLabel "hasDateOfReceival"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
 
 temgo:instrument a owl:ObjectProperty ;
     rdfs:label "instrument"^^xsd:string ;
@@ -4509,13 +4518,13 @@ temgo:relatedTechnique a owl:AnnotationProperty ;
 
 temgo:sampleHolder a owl:ObjectProperty ;
     rdfs:label "sampleHolder"^^xsd:string ;
-    dcterms:description "Reference to sample holder"^^xsd:string ;
-    rdfs:comment "Reference to sample holder"^^xsd:string ;
+    dcterms:description "Reference to sample holder."@en ;
+    rdfs:comment "Reference to sample holder."@en ;
     rdfs:domain temgo:Instrument ;
     rdfs:isDefinedBy temgo: ;
     rdfs:range temgo:SampleHolder ;
     skos:prefLabel "sampleHolder"^^xsd:string ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to sample holder"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to sample holder."@en ;
     temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy> .
 
 temgo:stagePositionX a owl:DatatypeProperty ;
@@ -4563,6 +4572,30 @@ temgo:stageRotation a owl:DatatypeProperty ;
     ns1:unit "degree"^^xsd:string ;
     temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy> .
 
+temgo:stageRotationMax a owl:DatatypeProperty ;
+    rdfs:label "stageRotationMax"^^xsd:string ;
+    dcterms:description "Maximum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    rdfs:comment "Maximum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "stageRotationMax"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string ;
+    temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy> .
+
+temgo:stageRotationMin a owl:DatatypeProperty ;
+    rdfs:label "stageRotationMin"^^xsd:string ;
+    dcterms:description "Minimum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    rdfs:comment "Minimum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "stageRotationMin"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string ;
+    temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy> .
+
 temgo:stageTiltX a owl:DatatypeProperty ;
     rdfs:label "TiltX"^^xsd:string ;
     dcterms:description "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
@@ -4572,6 +4605,28 @@ temgo:stageTiltX a owl:DatatypeProperty ;
     rdfs:range xsd:double ;
     skos:prefLabel "TiltX"^^xsd:string ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string .
+
+temgo:stageTiltXMax a owl:DatatypeProperty ;
+    rdfs:label "TiltXMax"^^xsd:string ;
+    dcterms:description "Maximum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:comment "Maximum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "TiltXMax"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string .
+
+temgo:stageTiltXMin a owl:DatatypeProperty ;
+    rdfs:label "TiltXMin"^^xsd:string ;
+    dcterms:description "Minimum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:comment "Minimum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "TiltXMin"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise."^^xsd:string ;
     ns1:unit "degree"^^xsd:string .
 
 temgo:stageTiltY a owl:DatatypeProperty ;
@@ -4586,6 +4641,50 @@ temgo:stageTiltY a owl:DatatypeProperty ;
     ns1:unit "degree"^^xsd:string ;
     temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy> .
 
+temgo:stageTiltYMax a owl:DatatypeProperty ;
+    rdfs:label "TiltYMax"^^xsd:string ;
+    dcterms:description "Maximum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:comment "Maximum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "TiltYMax"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string ;
+    temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy> .
+
+temgo:stageTiltYMin a owl:DatatypeProperty ;
+    rdfs:label "TiltYMin"^^xsd:string ;
+    dcterms:description "Minimum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:comment "Minimum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    rdfs:domain temgo:Instrument ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "TiltYMin"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise."^^xsd:string ;
+    ns1:unit "degree"^^xsd:string ;
+    temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy> .
+
+temgo:studiedBy a owl:ObjectProperty ;
+    rdfs:label "studiedBy"^^xsd:string ;
+    dcterms:description "The Agent who studied the documented object."@en ;
+    rdfs:comment "The Agent who studied the documented object."@en ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ;
+    skos:prefLabel "studiedBy"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Agent who studied the documented object."@en .
+
+temgo:studiedFor a owl:DatatypeProperty ;
+    rdfs:label "studiedFor"^^xsd:string ;
+    dcterms:description "Description about what the documented object is studied for."@en ;
+    rdfs:comment "Description about what the documented object is studied for."@en ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:isDefinedBy temgo: ;
+    rdfs:range xsd:string ;
+    skos:prefLabel "studiedFor"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Description about what the documented object is studied for."@en .
+
 temgo:workingDistance a owl:DatatypeProperty ;
     rdfs:label "workingDistance"^^xsd:string ;
     dcterms:description "Distance between the sample and the electron polepiece."^^xsd:string ;
@@ -4598,11 +4697,29 @@ temgo:workingDistance a owl:DatatypeProperty ;
     ns1:unit "m"^^xsd:string ;
     temgo:relatedTechnique <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy> .
 
+<https://orcid.org/0000-0002-1560-809X> a foaf:Person ;
+    skos:altLabel "JesperFriis"^^xsd:string ;
+    skos:prefLabel "Jesper Friis"^^xsd:string ;
+    foaf:name "Jesper Friis"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0002-9153-9866> a foaf:Person ;
+    skos:altLabel "TorHaugland"^^xsd:string ;
+    skos:prefLabel "Tor Strømsem Haugland"^^xsd:string ;
+    foaf:name "Tor Strømsem Haugland"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0003-0845-0287> a foaf:Person ;
+    skos:altLabel "SigurdWenner"^^xsd:string ;
+    skos:prefLabel "Sigurd Wenner"^^xsd:string ;
+    foaf:name "Sigurd Wenner"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
+
 emmo:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 emmo:EMMO_4ab7fb52_cec3_4c00_90c0_5648f01e3296 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
-
-emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 emmo:EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
@@ -4634,10 +4751,10 @@ temgo:T8T9Aging1 a owl:Class ;
             owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
             owl:someValuesFrom temgo:T8T9Deformation ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_duration ;
+            owl:hasValue temgo:t8t9aging1_temp ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging1_temp ;
+            owl:hasValue temgo:t8t9aging1_duration ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60,
         temgo:T8T9TreatmentTask ;
@@ -4650,10 +4767,10 @@ temgo:T8T9Aging2 a owl:Class ;
     rdfs:comment "Second aging step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging2_temp ;
+            owl:hasValue temgo:t8t9aging2_duration ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         [ a owl:Restriction ;
-            owl:hasValue temgo:t8t9aging2_duration ;
+            owl:hasValue temgo:t8t9aging2_temp ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
         emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60,
         temgo:T8T9TreatmentTask ;
@@ -4666,11 +4783,11 @@ temgo:T8T9Deformation a owl:Class ;
     rdfs:comment "Deformation step of the T8T9 treatment."@en ;
     rdfs:isDefinedBy temgo: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
-            owl:someValuesFrom temgo:T8T9Aging2 ],
-        [ a owl:Restriction ;
             owl:hasValue temgo:t8t9deformation_strain ;
             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 ;
+            owl:someValuesFrom temgo:T8T9Aging2 ],
         temgo:T8T9TreatmentTask ;
     skos:prefLabel "T8T9Deformation"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Deformation step of the T8T9 treatment."@en .
@@ -4700,6 +4817,18 @@ temgo:t8t9deformation_strain a owl:NamedIndividual,
     rdfs:isDefinedBy temgo: ;
     emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 "15%"^^emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676 .
 
+<https://www.ntnu.no/ansatte/inga.konow> a foaf:Person ;
+    skos:altLabel "IngaKonow"^^xsd:string ;
+    skos:prefLabel "Inga D. Konow"^^xsd:string ;
+    foaf:name "Inga D. Konow"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.ntnu.edu> .
+
+<https://www.researchgate.net/profile/Elisabeth-Thronsen-2> a foaf:Person ;
+    skos:altLabel "ElisabethThronsen"^^xsd:string ;
+    skos:prefLabel "Elisabeth Thronsen"^^xsd:string ;
+    foaf:name "Elisabeth Thronsen"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
 emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
@@ -4712,6 +4841,14 @@ emmo:EMMO_ebc9e62c_5dc4_44db_9060_7923740bdf78 rdfs:isDefinedBy <https://www.ntn
 
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#CharacterisationSystem> rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
+<https://www.ntnu.edu/temgemini> a foaf:Organization ;
+    skos:altLabel "TEMGeminiCentre"^^xsd:string ;
+    skos:prefLabel "TEM Gemini Centre"^^xsd:string ;
+    foaf:homepage <https://www.ntnu.edu/temgemini> ;
+    foaf:logo <https://www.ntnu.edu/documents/140131/35821926/temgemini_logo01.jpg> ;
+    foaf:mbox <mailto:randi.holmestad@ntnu.no> ;
+    foaf:name "TEM Gemini Centre"^^xsd:string .
+
 temgo:STEM a owl:Class ;
     rdfs:label "STEM"^^xsd:string ;
     dcterms:description "An advanced imaging technique that generates high-resolution images of a sample's internal structure by scanning a focused electron beam across it and collecting transmitted signals. It provides nanoscale to atomic-level details and can acquire spectroscopic data like X-ray and electron energy loss spectra to analyze the composition of materials. STEM is similar to a conventional transmission electron microscope (TEM) in that the image is formed by electrons passing through a thin specimen, but differs in how the beam is used."@en ;
@@ -4721,6 +4858,8 @@ temgo:STEM a owl:Class ;
     skos:altLabel "ScanningTransmissionElectronMicroscopy"^^xsd:string ;
     skos:prefLabel "STEM"^^xsd:string ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An advanced imaging technique that generates high-resolution images of a sample's internal structure by scanning a focused electron beam across it and collecting transmitted signals. It provides nanoscale to atomic-level details and can acquire spectroscopic data like X-ray and electron energy loss spectra to analyze the composition of materials. STEM is similar to a conventional transmission electron microscope (TEM) in that the image is formed by electrons passing through a thin specimen, but differs in how the beam is used."@en .
+
+emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 rdfs:isDefinedBy <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> .
 
 temgo:T8T9TreatmentTask a owl:Class ;
     rdfs:label "T8T9TreatmentTask"@en ;
