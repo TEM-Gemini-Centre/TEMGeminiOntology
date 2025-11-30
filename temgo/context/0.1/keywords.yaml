@@ -1,87 +1,364 @@
----
-basedOn: ["ddoc:prefixes", "ddoc:process"]
-
 prefixes:
-  temgo: https://www.ntnu.edu/temgemini/vocab/temgo#
-  mdo: https://w3id.org/emmo/domain/microstructure#
+  ddoc: https://w3id.org/emmo/application/datadoc#
+  accr: http://publications.europa.eu/resource/authority/access-right/
+  adms: http://www.w3.org/ns/adms#
+  dcat: http://www.w3.org/ns/dcat#
+  dcatap: http://data.europa.eu/r5r/
+  dcterms: http://purl.org/dc/terms/
+  dctype: http://purl.org/dc/dcmitype/
+  eli: http://data.europa.eu/eli/ontology#
+  foaf: http://xmlns.com/foaf/0.1/
+  iana: https://www.iana.org/assignments/media-types/
+  locn: http://www.w3.org/ns/locn#
+  odrl: http://www.w3.org/ns/odrl/2/
+  owl: http://www.w3.org/2002/07/owl#
+  prov: http://www.w3.org/ns/prov#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  schema: https://schema.org/
+  skos: http://www.w3.org/2004/02/skos/core#
+  spdx: http://spdx.org/rdf/terms#
+  stat: http://purl.org/adms/status/
+  vann: http://purl.org/vocab/vann/
+  vcard: http://www.w3.org/2006/vcard/ns#
+  xsd: http://www.w3.org/2001/XMLSchema#
   emmo: https://w3id.org/emmo#
-
+  oteio: https://w3id.org/emmo/domain/oteio#
+  chameo: https://w3id.org/emmo/domain/characterisation-methodology/chameo#
+  xml: http://www.w3.org/XML/1998/namespace
+  brick: https://brickschema.org/schema/Brick#
+  csvw: http://www.w3.org/ns/csvw#
+  dc: http://purl.org/dc/elements/1.1/
+  dcmitype: http://purl.org/dc/dcmitype/
+  dcam: http://purl.org/dc/dcam/
+  doap: http://usefulinc.com/ns/doap#
+  geo: http://www.opengis.net/ont/geosparql#
+  org: http://www.w3.org/ns/org#
+  prof: http://www.w3.org/ns/dx/prof/
+  qb: http://purl.org/linked-data/cube#
+  sh: http://www.w3.org/ns/shacl#
+  sosa: http://www.w3.org/ns/sosa/
+  ssn: http://www.w3.org/ns/ssn/
+  time: http://www.w3.org/2006/time#
+  void: http://rdfs.org/ns/void#
+  wgs: https://www.w3.org/2003/01/geo/wgs84_pos#
+  temgo: https://www.ntnu.edu/temgemini/vocab/temgo#
+  bibo: http://purl.org/ontology/bibo/
+theme:
+- ddoc:datadoc
+- ddoc:prefixes
 resources:
-  Alloy:
-    iri: https://w3id.org/emmo/domain/microstructure#EMMO_e25884df-decb-52e1-b8c0-f5092dd40066
-    description: Mixture with metallic character composed of two or more elements of which at least one is a metal.
-    usageNote: The keywords `manufacturedBy` and `manufacturedWith` can be used to related to the manufacturer of the alloy and the manufacturing process it was produced with, respectively.
+  Resource:
+    iri: dcat:Resource
+    subClassOf: rdfs:Resource
+    description: Resource published or curated by an agent.
     keywords:
-      alloyName:
-        iri: dcterms:identifier
-        range: https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94
-        description: Identifier of the material.
-
-      hasSingleComponentComposition:
-        iri: https://w3id.org/emmo#EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5
-        # emmo:SingleComponentComposition
-        range: https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2
-        description: Relates an alloy to the amount of one of its elements.
-
-      heatTreatment:
-        iri: mdo:hasHeatTreatmentLabel
+      instrument:
+        iri: temgo:instrument
+        type: owl:ObjectProperty
+        domain: dcat:Resource
+        range: temgo:Instrument
+        prefLabel: instrument
+        elucidation: Reference to the instrument
+        name: instrument
+  Instrument:
+    iri: temgo:Instrument
+    subClassOf: chameo:CharacterisationMeasurementInstrument
+    keywords:
+      accelerationVoltage:
+        iri: temgo:accelerationVoltage
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: accelerationVoltage
+        elucidation: Electron acceleration voltage
+        https://w3id.org/emmo/application/datadoc#unit: V
+        name: accelerationVoltage
+      apertureDiameterObjective:
+        iri: temgo:apertureDiameterObjective
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: apertureDiameterObjective
+        elucidation: Diameter of objective aperture
+        https://w3id.org/emmo/application/datadoc#unit: m
+        name: apertureDiameterObjective
+      beamCurrent:
+        iri: temgo:beamCurrent
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: beamCurrent
+        elucidation: Current of the electron beam
+        https://w3id.org/emmo/application/datadoc#unit: A
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        name: beamCurrent
+      detectorMode:
+        iri: temgo:detectorMode
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
         range: rdfs:Literal
         datatype: xsd:string
-        description: A label for the heat treatment process.
-
-      notes:
-        iri: skos:note
+        prefLabel: detectorMode
+        elucidation: Detecor's mode, e.g., SE
+        name: detectorMode
+      detectorName:
+        iri: temgo:detectorName
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
         range: rdfs:Literal
-        datatype: rdf:langString
-        description: A general note, for any purpose.
-
-      receivedDate:
+        datatype: xsd:string
+        prefLabel: detectorName
+        elucidation: Detecor's name, e.g., ETD
+        name: detectorName
+      dwellTime:
+        iri: temgo:dwellTime
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: dwellTime
+        elucidation: Beam dwell time on each pixel during scan.
+        https://w3id.org/emmo/application/datadoc#unit: s
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique:
+        - https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        - https://www.ntnu.edu/temgemini/vocab/temgo#STEM
+        name: dwellTime
+      electronSource:
+        iri: temgo:electronSource
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:string
+        prefLabel: electronSource
+        elucidation: Electron source, e.g., FEG
+        name: electronSource
+      lineIntegration:
+        iri: temgo:lineIntegration
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:integer
+        prefLabel: lineIntegration
+        elucidation: Number of times each line was scanned for intensity integration.
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique:
+        - https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        - https://www.ntnu.edu/temgemini/vocab/temgo#STEM
+        name: lineIntegration
+      magnification:
+        iri: temgo:magnification
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: magnification
+        elucidation: Magnification
+        name: magnification
+      stagePositionX:
+        iri: temgo:stagePositionX
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: PositionX
+        elucidation: X position of the stage/specimen relative to origin
+        https://w3id.org/emmo/application/datadoc#unit: m
+        name: stagePositionX
+      stagePositionY:
+        iri: temgo:stagePositionY
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: PositionY
+        elucidation: Y position of the stage/specimen relative to origin
+        https://w3id.org/emmo/application/datadoc#unit: m
+        name: stagePositionY
+      stagePositionZ:
+        iri: temgo:stagePositionZ
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: PositionZ
+        elucidation: Z position of the stage/specimen relative to origin
+        https://w3id.org/emmo/application/datadoc#unit: m
+        name: stagePositionZ
+      stageRotation:
+        iri: temgo:stageRotation
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: stageRotation
+        elucidation: In-plane rotation of the SEM sample stage about the beam relative
+          to the chamber X-axis. Positive rotation is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        name: stageRotation
+      stageRotationMin:
+        iri: temgo:stageRotationMin
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: stageRotationMin
+        elucidation: Minimum in-plane rotation of the SEM sample stage about the beam
+          relative to the chamber X-axis. Positive rotation is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        name: stageRotationMin
+      stageRotationMax:
+        iri: temgo:stageRotationMax
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: stageRotationMax
+        elucidation: Maximum in-plane rotation of the SEM sample stage about the beam
+          relative to the chamber X-axis. Positive rotation is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        name: stageRotationMax
+      stageTiltX:
+        iri: temgo:stageTiltX
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltX
+        elucidation: Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis.
+          For SEM, the X-axis is defined in the chamber coordinate system (left-right).
+          For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal
+          axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        name: stageTiltX
+      stageTiltXMin:
+        iri: temgo:stageTiltXMin
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltXMin
+        elucidation: Minimum tilt of the stage (SEM) or specimen holder (TEM) about
+          the X-axis. For SEM, the X-axis is defined in the chamber coordinate system
+          (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the
+          holder's longitudinal axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        name: stageTiltXMin
+      stageTiltXMax:
+        iri: temgo:stageTiltXMax
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltXMax
+        elucidation: Maximum tilt of the stage (SEM) or specimen holder (TEM) about
+          the X-axis. For SEM, the X-axis is defined in the chamber coordinate system
+          (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the
+          holder's longitudinal axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        name: stageTiltXMax
+      stageTiltY:
+        iri: temgo:stageTiltY
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltY
+        elucidation: Tilt of the TEM specimen holder about the ? axis (orthogonal
+          to ? axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy
+        name: stageTiltY
+      stageTiltYMin:
+        iri: temgo:stageTiltYMin
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltYMin
+        elucidation: Minimum tilt of the TEM specimen holder about the ? axis (orthogonal
+          to ? axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy
+        name: stageTiltYMin
+      stageTiltYMax:
+        iri: temgo:stageTiltYMax
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: TiltYMax
+        elucidation: Maximum tilt of the TEM specimen holder about the ? axis (orthogonal
+          to ? axis). Positive tilt is clockwise.
+        https://w3id.org/emmo/application/datadoc#unit: degree
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy
+        name: stageTiltYMax
+      workingDistance:
+        iri: temgo:workingDistance
+        type: owl:DatatypeProperty
+        domain: temgo:Instrument
+        range: rdfs:Literal
+        datatype: xsd:double
+        prefLabel: workingDistance
+        elucidation: Distance between the sample and the electron polepiece.
+        https://w3id.org/emmo/application/datadoc#unit: m
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#ScanningElectronMicroscopy
+        name: workingDistance
+      sampleHolder:
+        iri: temgo:sampleHolder
+        type: owl:ObjectProperty
+        domain: temgo:Instrument
+        range: temgo:SampleHolder
+        prefLabel: sampleHolder
+        elucidation: Reference to sample holder.
+        https://www.ntnu.edu/temgemini/vocab/temgo#relatedTechnique: https://w3id.org/emmo/domain/characterisation-methodology/chameo#TransmissionElectronMicroscopy
+        name: sampleHolder
+  EMMO_90ae56e4_d197_49b6_be1a_0049e4756606:
+    iri: emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606
+    keywords:
+      dateOfReceival:
         iri: temgo:dateOfReceival
+        type: owl:DatatypeProperty
+        domain: emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606
         range: rdfs:Literal
-        #datatype: xsd:date
-        description: The data an object is received.
-
-      studiedBy:
-        iri: temgo:studiedBy
-        range: foaf:Agent
-        description: The person who studied the documented object.
-
+        datatype: xsd:date
+        subPropertyOf: owl:topDataProperty
+        prefLabel: dateOfReceival
+        altLabel: receivedDate
+        elucidation: The date an object is received.
+        name: dateOfReceival
       studiedFor:
         iri: temgo:studiedFor
+        type: owl:DatatypeProperty
+        domain: emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606
         range: rdfs:Literal
         datatype: xsd:string
-        description: Description about what the documented object is studied for.
-
-
+        prefLabel: studiedFor
+        elucidation: Description about what the documented object is studied for.
+        name: studiedFor
+      studiedBy:
+        iri: temgo:studiedBy
+        type: owl:ObjectProperty
+        domain: emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606
+        range: emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046
+        prefLabel: studiedBy
+        elucidation: The Agent who studied the documented object.
+        name: studiedBy
   Property:
     iri: rdf:Property
-    description: The class of RDF properties.
     keywords:
       relatedTechnique:
         iri: temgo:relatedTechnique
-        range: chameo:CharacterisationTechnique
-        description: Relates a property to a characterisation technique that this property is relevant for.
-
-
-  SingleComponentComposition:
-    iri: https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2
-    description: The fraction or amount of a single constituent of a substance.
-    keywords:
-      hasSIQuantityValue:
-        iri: https://w3id.org/emmo#EMMO_42806efc_581b_4ff8_81b0_b4d62153458b
+        type: owl:AnnotationProperty
+        domain: rdf:Property
         range: rdfs:Literal
-        # emmo:SIQuantityDatatype
-        datatype: https://w3id.org/emmo#EMMO_799c067b_083f_4365_9452_1f1433b03676
-        description: "Relates a physical quantity to its value specified as a string consisting of a numerical, a separator and a unit. Ex: '3 cm'."
-
-      chemicalSymbol:
-        iri: temgo:chemicalSymbol
-        range: rdfs:Literal
-        datatype: xsd:string
-        description: Chemical symbol.
-
-      hasChemicalSpecies:
-        iri: https://w3id.org/emmo#EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c
-        # emmo:ChemicalSpecies
-        range: https://w3id.org/emmo#EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689
-        description: A symbolic construct that stands for a chemical species.
+        datatype: chameo:CharacterisationTechnique
+        prefLabel: relatedTechnique
+        elucidation: Relates a property to a characterisation technique that this
+          property is relevant for.
+        name: relatedTechnique

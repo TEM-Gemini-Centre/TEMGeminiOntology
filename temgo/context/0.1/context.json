@@ -27,8 +27,25 @@
     "emmo": "https://w3id.org/emmo#",
     "oteio": "https://w3id.org/emmo/domain/oteio#",
     "chameo": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "org": "http://www.w3.org/ns/org#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "temgo": "https://www.ntnu.edu/temgemini/vocab/temgo#",
-    "mdo": "https://w3id.org/emmo/domain/microstructure#",
+    "bibo": "http://purl.org/ontology/bibo/",
     "accessRights": {
       "@id": "dcterms:accessRights",
       "@type": "@id"
@@ -178,6 +195,10 @@
     "usageNote": {
       "@id": "vann:usageNote",
       "@language": "en"
+    },
+    "instrument": {
+      "@id": "temgo:instrument",
+      "@type": "@id"
     },
     "distribution": {
       "@id": "dcat:distribution",
@@ -418,54 +439,113 @@
       "@id": "owl:maxQualifiedCardinality",
       "@type": "xsd:nonNegativeInteger"
     },
-    "alloyName": {
-      "@id": "dcterms:identifier",
-      "@type": "@id"
+    "accelerationVoltage": {
+      "@id": "temgo:accelerationVoltage",
+      "@type": "xsd:double"
     },
-    "hasSingleComponentComposition": {
-      "@id": "emmo:EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5",
-      "@type": "@id"
+    "apertureDiameterObjective": {
+      "@id": "temgo:apertureDiameterObjective",
+      "@type": "xsd:double"
     },
-    "heatTreatment": {
-      "@id": "mdo:hasHeatTreatmentLabel",
+    "beamCurrent": {
+      "@id": "temgo:beamCurrent",
+      "@type": "xsd:double"
+    },
+    "detectorMode": {
+      "@id": "temgo:detectorMode",
       "@type": "xsd:string"
     },
-    "notes": {
-      "@id": "skos:note",
-      "@language": "en"
-    },
-    "producedBy": {
-      "@id": "emmo:EMMO_89c5fd4c_c7b5_4fde_bca8_7734cbda777a",
-      "@type": "@id"
-    },
-    "productionMethod": {
-      "@id": "emmo:EMMO_0e86a108_9d4d_4582_8126_f0c527d81901",
-      "@type": "@id"
-    },
-    "received": "temgo:dataOfReceival",
-    "studiedBy": {
-      "@id": "temgo:studiedBy",
+    "detectorName": {
+      "@id": "temgo:detectorName",
       "@type": "xsd:string"
+    },
+    "dwellTime": {
+      "@id": "temgo:dwellTime",
+      "@type": "xsd:double"
+    },
+    "electronSource": {
+      "@id": "temgo:electronSource",
+      "@type": "xsd:string"
+    },
+    "lineIntegration": {
+      "@id": "temgo:lineIntegration",
+      "@type": "xsd:integer"
+    },
+    "magnification": {
+      "@id": "temgo:magnification",
+      "@type": "xsd:double"
+    },
+    "stagePositionX": {
+      "@id": "temgo:stagePositionX",
+      "@type": "xsd:double"
+    },
+    "stagePositionY": {
+      "@id": "temgo:stagePositionY",
+      "@type": "xsd:double"
+    },
+    "stagePositionZ": {
+      "@id": "temgo:stagePositionZ",
+      "@type": "xsd:double"
+    },
+    "stageRotation": {
+      "@id": "temgo:stageRotation",
+      "@type": "xsd:double"
+    },
+    "stageRotationMin": {
+      "@id": "temgo:stageRotationMin",
+      "@type": "xsd:double"
+    },
+    "stageRotationMax": {
+      "@id": "temgo:stageRotationMax",
+      "@type": "xsd:double"
+    },
+    "stageTiltX": {
+      "@id": "temgo:stageTiltX",
+      "@type": "xsd:double"
+    },
+    "stageTiltXMin": {
+      "@id": "temgo:stageTiltXMin",
+      "@type": "xsd:double"
+    },
+    "stageTiltXMax": {
+      "@id": "temgo:stageTiltXMax",
+      "@type": "xsd:double"
+    },
+    "stageTiltY": {
+      "@id": "temgo:stageTiltY",
+      "@type": "xsd:double"
+    },
+    "stageTiltYMin": {
+      "@id": "temgo:stageTiltYMin",
+      "@type": "xsd:double"
+    },
+    "stageTiltYMax": {
+      "@id": "temgo:stageTiltYMax",
+      "@type": "xsd:double"
+    },
+    "workingDistance": {
+      "@id": "temgo:workingDistance",
+      "@type": "xsd:double"
+    },
+    "sampleHolder": {
+      "@id": "temgo:sampleHolder",
+      "@type": "@id"
+    },
+    "dateOfReceival": {
+      "@id": "temgo:dateOfReceival",
+      "@type": "xsd:date"
     },
     "studiedFor": {
       "@id": "temgo:studiedFor",
       "@type": "xsd:string"
     },
+    "studiedBy": {
+      "@id": "temgo:studiedBy",
+      "@type": "@id"
+    },
     "relatedTechnique": {
       "@id": "temgo:relatedTechnique",
-      "@type": "@id"
-    },
-    "hasSIQuantityValue": {
-      "@id": "emmo:EMMO_42806efc_581b_4ff8_81b0_b4d62153458b",
-      "@type": "emmo:EMMO_799c067b_083f_4365_9452_1f1433b03676"
-    },
-    "chemicalSymbol": {
-      "@id": "temgo:chemicalSymbol",
-      "@type": "xsd:string"
-    },
-    "hasChemicalSpecies": {
-      "@id": "emmo:EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c",
-      "@type": "@id"
+      "@type": "chameo:CharacterisationTechnique"
     },
     "Resource": "dcat:Resource",
     "Dataset": "dcat:Dataset",
@@ -494,8 +574,9 @@
     "GenericResource": "rdfs:Resource",
     "Restriction": "owl:Restriction",
     "Document": "foaf:Document",
-    "Alloy": "mdo:EMMO_e25884df-decb-52e1-b8c0-f5092dd40066",
-    "Property": "rdf:Property",
-    "SingleComponentComposition": "emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2"
+    "Instrument": "temgo:Instrument",
+    "SampleHolder": "temgo:SampleHolder",
+    "EMMO_90ae56e4_d197_49b6_be1a_0049e4756606": "emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606",
+    "Property": "rdf:Property"
   }
 }
