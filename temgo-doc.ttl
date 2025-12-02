@@ -4349,9 +4349,9 @@ chameo:requiresLevelOfExpertise rdfs:isDefinedBy <https://www.ntnu.edu/temgemini
     vann:preferredNamespaceUri "https://www.ntnu.edu/temgemini/vocab/temgo"^^xsd:string ;
     rdfs:seeAlso <https://w3id.org/emmo/domain/microscopy> ;
     owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
-    owl:priorVersion "0.0.1"^^xsd:string ;
-    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta> ;
-    owl:versionInfo "0.1.0-beta"^^xsd:string ;
+    owl:priorVersion "0.1.0"^^xsd:string ;
+    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta> ;
+    owl:versionInfo "0.2.0-beta"^^xsd:string ;
     foaf:fundedBy <https://he-matchmaker.eu>,
         <https://www.forskningsradet.no> .
 

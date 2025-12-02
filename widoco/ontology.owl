@@ -18,7 +18,7 @@
      xmlns:datadoc="https://w3id.org/emmo/application/datadoc#"
      xmlns:microstructure="https://w3id.org/emmo/domain/microstructure#">
     <owl:Ontology rdf:about="https://www.ntnu.edu/temgemini/vocab/temgo">
-        <owl:versionIRI rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta"/>
+        <owl:versionIRI rdf:resource="https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta"/>
         <owl:imports rdf:resource="https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl"/>
         <terms:abstract xml:lang="en">The TEM Gemini Ontology (TEMGO) provides a standardised taxonomy and vocabulary for TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre.</terms:abstract>
         <terms:contributor rdf:resource="https://www.ntnu.edu/physmet"/>
@@ -38,8 +38,8 @@
         <vann:preferredNamespaceUri>https://www.ntnu.edu/temgemini/vocab/temgo</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">TEMGO</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://w3id.org/emmo/domain/microscopy"/>
-        <owl:priorVersion>0.0.1</owl:priorVersion>
-        <owl:versionInfo>0.1.0-beta</owl:versionInfo>
+        <owl:priorVersion>0.1.0</owl:priorVersion>
+        <owl:versionInfo>0.2.0-beta</owl:versionInfo>
         <foaf:fundedBy rdf:resource="https://he-matchmaker.eu"/>
         <foaf:fundedBy rdf:resource="https://www.forskningsradet.no"/>
     </owl:Ontology>

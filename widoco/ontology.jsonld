@@ -11117,13 +11117,13 @@
     "@id" : "https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@value" : "0.0.1"
+    "@value" : "0.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta"
+    "@id" : "https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0-beta"
+    "@value" : "0.2.0-beta"
   } ],
   "http://xmlns.com/foaf/0.1/fundedBy" : [ {
     "@id" : "https://he-matchmaker.eu"

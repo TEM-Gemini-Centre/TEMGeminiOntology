@@ -1,5 +1,5 @@
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta> .
+<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta> .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#imports> <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://purl.org/dc/terms/abstract> "The TEM Gemini Ontology (TEMGO) provides a standardised taxonomy and vocabulary for TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre."@en .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://purl.org/dc/terms/contributor> <https://www.ntnu.edu/physmet> .
@@ -19,8 +19,8 @@
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2000/01/rdf-schema#label> "TEMGO"@en .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/emmo/domain/microscopy> .
-<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#priorVersion> "0.0.1" .
-<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0-beta" .
+<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#priorVersion> "0.1.0" .
+<https://www.ntnu.edu/temgemini/vocab/temgo> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0-beta" .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://xmlns.com/foaf/0.1/fundedBy> <https://he-matchmaker.eu> .
 <https://www.ntnu.edu/temgemini/vocab/temgo> <http://xmlns.com/foaf/0.1/fundedBy> <https://www.forskningsradet.no> .
 # 
