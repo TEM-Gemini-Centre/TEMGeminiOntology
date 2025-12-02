@@ -17,10 +17,10 @@
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
-    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta> ;
+    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta> ;
     owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
-    owl:versionInfo "0.1.0-beta" ;
-    owl:priorVersion "0.0.1" ;
+    owl:versionInfo "0.2.0-beta" ;
+    owl:priorVersion "0.1.0" ;
     rdfs:label "TEMGO"@en ;
     rdfs:seeAlso <https://w3id.org/emmo/domain/microscopy> ;
     dcterms:contributor <https://www.ntnu.edu/physmet> ;

@@ -9,7 +9,7 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo/contributors> rdf:type owl:Ontology ;
-    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta/contributors> .
+    owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta/contributors> .
 
 # Contributors not already defined in dependencies
 <https://orcid.org/0000-0001-5142-2199> a foaf:Person ;

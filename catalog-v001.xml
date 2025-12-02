@@ -2,9 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta"               uri="temgo.ttl"/>
-    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta/dependencies"  uri="temgo-dependencies.ttl"/>
-    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.1.0-beta/contributors"  uri="temgo-contributors.ttl"/>
+    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta"               uri="temgo.ttl"/>
+    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta/dependencies"  uri="temgo-dependencies.ttl"/>
+    <uri name="https://www.ntnu.edu/temgemini/vocab/temgo/0.2.0-beta/contributors"  uri="temgo-contributors.ttl"/>
 
   </group>
 </catalog>

@@ -1,3 +1,8 @@
+[![Documentation](https://img.shields.io/badge/documentation-red)](https://tem-gemini-centre.github.io/TEMGeminiOntology/widoco/index-en.html)
+[![CI tests](https://github.com/emmo-repo/domain-microstructure/actions/workflows/ci_tests.yml/badge.svg?branch=master)](https://github.com/tem-gemini-centre.github.io/TEMGeminiOntology/actions/workflows/ci_tests.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15010966.svg)](https://doi.org/10.5281/zenodo.15010966)
+
+
 # TEM Gemini Ontology (TEMGO)
 An EMMO-based application-level ontology that defines standardised TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre.
 
@@ -14,10 +19,11 @@ The ontology is available from this IRI: https://tem-gemini-centre.github.io/TEM
 ### Imported ontologies
 Version dependencies on imported ontologies:
 
-| Version    | [EMMO] | [CHAMEO] | [MDO]      | [DOM]      | Status      |
-|------------|--------|----------|------------|------------|-------------|
-| 0.0.1      | 1.0.0  | 1.0.0    | 0.3.1      | 0.5.3      | stable      |
-| 0.1.0-beta | 1.0.2  | 1.0.2    | 0.4.0-beta | 0.6.0-beta | development |
+| Version    | [EMMO] | [CHAMEO] | [MDO]      | [DOM]      | Status          |
+|------------|--------|----------|------------|------------|-----------------|
+| 0.0.1      | 1.0.0  | 1.0.0    | 0.3.1      | 0.5.3      | initial release |
+| 0.1.0      | 1.0.0  | 1.0.0    | 0.3.1      | 0.5.3      | stable          |
+| 0.2.0-beta | 1.0.2  | 1.0.2    | 0.4.0-beta | 0.6.0-beta | development     |
 
 
 
