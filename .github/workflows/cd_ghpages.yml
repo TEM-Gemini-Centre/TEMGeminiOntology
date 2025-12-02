@@ -1,7 +1,8 @@
 name: Deploy on GitHub Pages
-on:
-  push:
-    branches: [master]
+on: push
+#on:
+#  push:
+#    branches: [master]
 
 env:
   ONTOLOGY_NAME: temgo
@@ -30,7 +31,8 @@ jobs:
     - name: Install EMMOntoPy
       run: |
         pip install --upgrade pip
-        pip install EMMOntoPy
+        #pip install EMMOntoPy
+        pip install -U git+https://github.com/emmo-repo/EMMOntoPy.git@annotating
 
     - name: Install tripper
       run: |
@@ -123,10 +125,13 @@ jobs:
             -ontFile build/${ONTOLOGY_NAME}-doc.ttl \
             -outFolder build/widoco \
             -getOntologyMetadata \
+            -oops \
             -rewriteAll \
             -saveConfig build/widoco/widoco.conf \
+            - webVowl \
             -licensius \
             -includeAnnotationProperties
+
 
 
     - name: Deploy to GitHub Pages
