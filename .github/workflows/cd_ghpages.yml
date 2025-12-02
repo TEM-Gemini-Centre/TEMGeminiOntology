@@ -52,30 +52,39 @@ jobs:
       run: |
         wget --quiet https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
 
-    - name: Create squashed ontology
+    - name: Prepare build/ folder
       run: |
         mkdir build
         cp README.md LICENSE build/.
 
+    - name: Create squashed dependencies
+      run: |
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="chameo:https://w3id.org/emmo/domain/characterisation-methodology/chameo#" \
             --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
             ${ONTOLOGY_NAME}-dependencies.ttl \
             build/${ONTOLOGY_NAME}-dependencies.ttl
 
+    - name: Create squashed ontology
+      run: |
         ontoconvert \
             -sawe \
             --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="chameo:https://w3id.org/emmo/domain/characterisation-methodology/chameo#" \
             --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
             --base-iri="${ONTOLOGY_IRI}#" \
             --iri="${ONTOLOGY_IRI}" \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}.ttl
 
+    - name: Create widoco input ontology for documentation
+      run: |
         ontoconvert \
             -awe \
             --namespace="emmo:https://w3id.org/emmo#" \
+            --namespace="chameo:https://w3id.org/emmo/domain/characterisation-methodology/chameo#" \
             --namespace="${ONTOLOGY_PREFIX}:${ONTOLOGY_IRI}#" \
             --base-iri="${ONTOLOGY_IRI}#" \
             --iri="${ONTOLOGY_IRI}" \

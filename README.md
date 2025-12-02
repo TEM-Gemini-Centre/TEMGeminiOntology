@@ -14,10 +14,10 @@ The ontology is available from this IRI: https://tem-gemini-centre.github.io/TEM
 ### Imported ontologies
 Version dependencies on imported ontologies:
 
-| Version | [EMMO] | [CHAMEO] | [MDO] | [DOM] |
-|---------|--------|----------|-------|-------|
-| 0.0.1   | 1.0.0  | 1.0.0    | 0.3.1 | 0.0.1 |
-| 0.1.0   | 1.0.0  | 1.0.0    | 0.3.1 | 0.0.1 |
+| Version    | [EMMO] | [CHAMEO] | [MDO]      | [DOM]      | Status      |
+|------------|--------|----------|------------|------------|-------------|
+| 0.0.1      | 1.0.0  | 1.0.0    | 0.3.1      | 0.5.3      | stable      |
+| 0.1.0-beta | 1.0.2  | 1.0.2    | 0.4.0-beta | 0.6.0-beta | development |
 
 
 
