@@ -11,11 +11,18 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
 @prefix temgo: <https://www.ntnu.edu/temgemini/vocab/temgo#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <https://www.ntnu.edu/temgemini/vocab/temgo#> .
 
 <https://www.ntnu.edu/temgemini/vocab/temgo> rdf:type owl:Ontology ;
     owl:versionIRI <https://www.ntnu.edu/temgemini/vocab/temgo/0.0.1> ;
     owl:imports <https://tem-gemini-centre.github.io/TEMGeminiOntology/temgo-dependencies.ttl> ;
+    owl:versionInfo "0.0.1"@en ;
+    owl:priorVersion ""@en ;
+    rdfs:label "TEMGO"@en ;
+    rdfs:seeAlso <https://w3id.org/emmo/domain/microscopy> ;
     dcterms:contributor <https://www.ntnu.edu/physmet> ;
     dcterms:creator
         <https://orcid.org/0000-0002-1560-809X> ,
@@ -26,10 +33,59 @@
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
     dcterms:publisher <https://www.ntnu.edu/temgemini> ;
     dcterms:title "TEM Gemini Ontology (TEMGO)"@en ;
-    <http://purl.org/vocab/vann/preferredNamespacePrefix> "temgo" ;
-    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://www.ntnu.edu/temgemini/vocab/temgo" ;
-    owl:versionInfo "0.0.1"@en .
+    dcterms:created "2025-05-09" ;
+    dcterms:description "An EMMO-based application-level ontology that defines standardised TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre."@en ;
+    dcterms:abstract "The TEM Gemini Ontology (TEMGO) provides a standardised taxonomy and vocabulary for TEM and SEM characterisation procedures, workflows, instruments and tools used within the TEM Gemini Centre."@en ;
+    bibo:status <http://purl.org/adms/status/UnderDevelopment> ;
+    bibo:doi <> ;
+    foaf:fundedBy <https://www.forskningsradet.no/> , <https://he-matchmaker.eu/> ;
+    vann:preferredNamespacePrefix "temgo" ;
+    vann:preferredNamespaceUri "https://www.ntnu.edu/temgemini/vocab/temgo" .
 
+
+# Contributors not already defined in dependencies
+<https://orcid.org/0000-0002-1560-809X> rdf:type foaf:Person ;
+    skos:altLabel "JesperFriis" ;
+    skos:prefLabel "Jesper Friis" ;
+    foaf:name "Jesper Friis" ;
+    foaf:workplaceHomepage <https://www.sintef.no/en/> .
+
+<https://www.researchgate.net/profile/Elisabeth-Thronsen-2> a foaf:Person ;
+    skos:altLabel "ElisabethThronsen" ;
+    skos:prefLabel "Elisabeth Thronsen" ;
+    foaf:name "Elisabeth Thronsen" ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0003-0845-0287> a foaf:Person ;
+    skos:altLabel "SigurdWenner" ;
+    skos:prefLabel "Sigurd Wenner" ;
+    foaf:name "Sigurd Wenner" ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0002-9153-9866> a foaf:Person ;
+    skos:altLabel "TorHaugland" ;
+    skos:prefLabel "Tor Strømsem Haugland" ;
+    foaf:name "Tor Strømsem Haugland" ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://www.ntnu.no/ansatte/inga.konow> a foaf:Person ;
+    skos:altLabel "IngaKonow" ;
+    skos:prefLabel "Inga D. Konow" ;
+    foaf:name "Inga D. Konow" ;
+    foaf:workplaceHomepage <https://www.ntnu.edu/> .
+
+<https://www.ntnu.edu/temgemini> a foaf:Organization ;
+    skos:altLabel "TEMGeminiCentre" ;
+    skos:prefLabel "TEM Gemini Centre" ;
+    foaf:name "TEM Gemini Centre" ;
+    foaf:logo <https://www.ntnu.edu/documents/140131/35821926/temgemini_logo01.jpg> ;
+    foaf:homepage <https://www.ntnu.edu/temgemini> ;
+    foaf:mbox <mailto:randi.holmestad@ntnu.no> .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
 
 :relatedTechnique a owl:AnnotationProperty ;
     rdfs:domain rdf:Property ;
@@ -38,142 +94,209 @@
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a property to a characterisation technique that this property is relevant for."@en .
 
 
-temgo:accelerationVoltage a owl:DatatypeProperty ;
+#################################################################
+#    Data properties
+#################################################################
+
+:accelerationVoltage a owl:DatatypeProperty ;
     skos:prefLabel "accelerationVoltage" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electron acceleration voltage" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "V" .
 
-temgo:apertureDiameterObjective a owl:DatatypeProperty ;
+:apertureDiameterObjective a owl:DatatypeProperty ;
     skos:prefLabel "apertureDiameterObjective" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Diameter of objective aperture" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
-temgo:beamCurrent a owl:DatatypeProperty ;
+:beamCurrent a owl:DatatypeProperty ;
     skos:prefLabel "beamCurrent" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Current of the electron beam" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "A" ;
-    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+    :relatedTechnique chameo:ScanningElectronMicroscopy .
 
-temgo:detectorMode a owl:DatatypeProperty ;
+:detectorMode a owl:DatatypeProperty ;
     skos:prefLabel "detectorMode" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Detecor's mode, e.g., SE" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
-temgo:detectorName a owl:DatatypeProperty ;
+:detectorName a owl:DatatypeProperty ;
     skos:prefLabel "detectorName" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Detecor's name, e.g., ETD" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
-temgo:dwellTime a owl:DatatypeProperty ;
+:dwellTime a owl:DatatypeProperty ;
     skos:prefLabel "dwellTime" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Beam dwell time on each pixel during scan." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "s" ;
-    temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
-        temgo:STEM .
+    :relatedTechnique chameo:ScanningElectronMicroscopy,
+        :STEM .
 
-temgo:electronSource a owl:DatatypeProperty ;
+:electronSource a owl:DatatypeProperty ;
     skos:prefLabel "electronSource" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electron source, e.g., FEG" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:string .
 
-temgo:instrument a owl:ObjectProperty ;
+:instrument a owl:ObjectProperty ;
     skos:prefLabel "instrument" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to the instrument" ;
     rdfs:domain dcat:Resource ;
-    rdfs:range temgo:Instrument .
+    rdfs:range :Instrument .
 
-temgo:lineIntegration a owl:DatatypeProperty ;
+:lineIntegration a owl:DatatypeProperty ;
     skos:prefLabel "lineIntegration" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Number of times each line was scanned for intensity integration." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:integer ;
-    temgo:relatedTechnique chameo:ScanningElectronMicroscopy,
-        temgo:STEM .
+    :relatedTechnique chameo:ScanningElectronMicroscopy,
+        :STEM .
 
-temgo:magnification a owl:DatatypeProperty ;
+:magnification a owl:DatatypeProperty ;
     skos:prefLabel "magnification" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Magnification" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double .
 
-temgo:sampleHolder a owl:ObjectProperty ;
-    skos:prefLabel "sampleHolder" ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to sample holder" ;
-    rdfs:domain :Instrument ;
-    rdfs:range temgo:SampleHolder ;
-    temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
-
-temgo:stagePositionX a owl:DatatypeProperty ;
+:stagePositionX a owl:DatatypeProperty ;
     skos:prefLabel "PositionX" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "X position of the stage/specimen relative to origin" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
-temgo:stagePositionY a owl:DatatypeProperty ;
+:stagePositionY a owl:DatatypeProperty ;
     skos:prefLabel "PositionY" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Y position of the stage/specimen relative to origin" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
-temgo:stagePositionZ a owl:DatatypeProperty ;
+:stagePositionZ a owl:DatatypeProperty ;
     skos:prefLabel "PositionZ" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Z position of the stage/specimen relative to origin" ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" .
 
-temgo:stageRotation a owl:DatatypeProperty ;
+:stageRotation a owl:DatatypeProperty ;
     skos:prefLabel "stageRotation" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" ;
-    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+    :relatedTechnique chameo:ScanningElectronMicroscopy .
 
-temgo:stageTiltX a owl:DatatypeProperty ;
+:stageRotationMin a owl:DatatypeProperty ;
+    skos:prefLabel "stageRotationMin" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    :relatedTechnique chameo:ScanningElectronMicroscopy .
+
+:stageRotationMax a owl:DatatypeProperty ;
+    skos:prefLabel "stageRotationMax" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum in-plane rotation of the SEM sample stage about the beam relative to the chamber X-axis. Positive rotation is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    :relatedTechnique chameo:ScanningElectronMicroscopy .
+
+:stageTiltX a owl:DatatypeProperty ;
     skos:prefLabel "TiltX" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" .
 
-temgo:stageTiltY a owl:DatatypeProperty ;
+:stageTiltXMin a owl:DatatypeProperty ;
+    skos:prefLabel "TiltXMin" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" .
+
+:stageTiltXMax a owl:DatatypeProperty ;
+    skos:prefLabel "TiltXMax" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum tilt of the stage (SEM) or specimen holder (TEM) about the X-axis. For SEM, the X-axis is defined in the chamber coordinate system (left-right). For TEM, this corresponds to ?-tilt (perpendicular to the holder's longitudinal axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" .
+
+:stageTiltY a owl:DatatypeProperty ;
     skos:prefLabel "TiltY" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "degree" ;
-    temgo:relatedTechnique chameo:TransmissionElectronMicroscopy .
+    :relatedTechnique chameo:TransmissionElectronMicroscopy .
 
-temgo:workingDistance a owl:DatatypeProperty ;
+:stageTiltYMin a owl:DatatypeProperty ;
+    skos:prefLabel "TiltYMin" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Minimum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    :relatedTechnique chameo:TransmissionElectronMicroscopy .
+
+:stageTiltYMax a owl:DatatypeProperty ;
+    skos:prefLabel "TiltYMax" ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Maximum tilt of the TEM specimen holder about the ? axis (orthogonal to ? axis). Positive tilt is clockwise." ;
+    rdfs:domain :Instrument ;
+    rdfs:range xsd:double ;
+    ddoc:unit "degree" ;
+    :relatedTechnique chameo:TransmissionElectronMicroscopy .
+
+:workingDistance a owl:DatatypeProperty ;
     skos:prefLabel "workingDistance" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Distance between the sample and the electron polepiece." ;
     rdfs:domain :Instrument ;
     rdfs:range xsd:double ;
     ddoc:unit "m" ;
-    temgo:relatedTechnique chameo:ScanningElectronMicroscopy .
+    :relatedTechnique chameo:ScanningElectronMicroscopy .
+
+:dateOfReceival a owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:range xsd:date ;
+    skos:prefLabel "dateOfReceival"@en ;
+    skos:altLabel "receivedDate"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
+
+:studiedFor a owl:DatatypeProperty ;
+    skos:prefLabel "studiedFor" ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:range xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Description about what the documented object is studied for."@en .
 
 
 
-:hasDateOfReceival rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
-                   rdfs:range xsd:dateTime ;
-                   skos:prefLabel "hasDateOfReceival"@en ;
-                   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The date an object is received."@en .
+#################################################################
+#    Object properties
+#################################################################
+
+:sampleHolder a owl:ObjectProperty ;
+    skos:prefLabel "sampleHolder" ;
+    rdfs:domain :Instrument ;
+    rdfs:range :SampleHolder ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reference to sample holder."@en ;
+    :relatedTechnique chameo:TransmissionElectronMicroscopy .
+
+:studiedBy a owl:ObjectProperty ;
+    skos:prefLabel "studiedBy" ;
+    rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    rdfs:range emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Agent who studied the documented object."@en .
 
 
 
