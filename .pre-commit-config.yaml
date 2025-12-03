@@ -39,3 +39,9 @@ repos:
       language: script
       pass_filenames: false
       stages: ["pre-commit"]
+    - id: generate-resources
+      name: Generate temgo-resources.ttl file
+      entry: .hooks/generate-resources.sh
+      language: script
+      pass_filenames: false
+      stages: ["pre-commit"]

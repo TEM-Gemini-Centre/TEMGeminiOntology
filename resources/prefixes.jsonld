@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "emmo": "https://w3id.org/emmo#",
+    "chameo": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#",
+    "temgo": "https://www.ntnu.edu/temgemini/vocab/temgo#",
+    "sh": "https://www.ntnu.edu/temgemini/vocab/temgo/sampleholder#"
+  }
+}

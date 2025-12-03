@@ -1,0 +1,16 @@
+@id,@type,label,description,manufacturedBy.name,stageTiltXMin,stageTiltXMax,stageTiltYMin,stageTiltYMax,stageRotationMin,stageRotationMax,temperatureLimitMin,temperatureLimitMax,chameo:hasModel
+sh:jeolEm31640,temgo:SampleHolder,specimen_tilting_beryllium_holder,Double tilt holder ,JEOL,-35,35,-30,30,,,,,EM-31640
+sh:jeolEm01040,temgo:SampleHolder,reinforced_specimen_double_tilt_holder,Reinforced double tilt holder,JEOL,-35,35,-30,30,,,,,EM-01040
+sh:jeolEm21010,temgo:SampleHolder,single_tilt_specimen_holder,Single tilt holder,JEOL,-30,30,,,,,,,EM-21010
+sh:jeolSingleTiltHolder,temgo:SampleHolder,single_tilt_holder,Single tilt holder for ARM,JEOL,-30,30,,,,,,,?
+sh:jeolEm31050,temgo:SampleHolder,specimen_heating_tilting_holder,Double tilt heating holder,JEOL,-15,15,-10,10,,,20,800,EM-31050
+sh:gatan646,temgo:SampleHolder,double_tilt_analytical_holder,Analytical double tilt holder,Gatan,Not tested,Not tested,Not tested,Not tested,,,,,646
+sh:gatan636,temgo:SampleHolder,double_tilt_cooling_holder,Double tilt cooling holder,Gatan,Not tested,Not tested,Not tested,Not tested,,,-170,110,636
+sh:gatan916,temgo:SampleHolder,high_tilt_tomography_holder,Tomography holder,Gatan,-70,70,,,,,,,916
+sh:gatanHhst4004,temgo:SampleHolder,environmental_cell_single_tilt_heating_holder,Environmental cell single tilt heating holder,Gatan,Not tested,Not tested,,,,,20,800,HHST4004
+sh:gatan648,temgo:SampleHolder,double_tilt_vacuum_transfer_holder,double tilt vacuum transfer holder,Gatan,Not tested,Not tested,Not tested,Not tested,,,,,648
+sh:fischione2040,temgo:SampleHolder,dual_axis_advanced_tomography_holder,Dual axis tomography rotation holder,Fischione,-70,70,,,0,360,,,2040
+sh:jeolEm31680,temgo:SampleHolder,specimen_tilting_beryllium_holder,Double tilt holder ,JEOL,-35,35,-30,30,,,,,EM-31680
+sh:jeolEm31650srh31,temgo:SampleHolder,jeol_rotation_holder,Rotation holder,JEOL,-25,25,,,-180,180,,,EM-31650SRH31
+sh:jeolEm21311htr,temgo:SampleHolder,tomography_inset_to_jeol_single_tilt_holders,Rotation holder,JEOL,-70,70,,,,,,,EM-21311HTR
+sh:densDH30,temgo:SampleHolder,dens_sample_heating_systems_double_tilt,Double tilt heating holder,DENS,-20,20,-10,10,,,20,1027,DENS-DH30
