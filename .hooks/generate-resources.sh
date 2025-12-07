@@ -11,4 +11,5 @@ datadoc \
     --context=resources/prefixes.jsonld \
     --keywords=temgo/context/keywords.yaml \
     --dump temgo-resources.ttl \
+    --no-strict \
     resources/sampleholder.csv
