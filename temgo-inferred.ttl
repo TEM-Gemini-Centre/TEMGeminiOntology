@@ -5283,7 +5283,7 @@ This class allows the picking of parts without necessarily going trough a rigid 
                                                             "The union of classes whole and part."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Holistic"@en ;
                                                skos:altLabel "Wholistic"@en ;
@@ -5700,7 +5700,7 @@ emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
                                                rdfs:comment "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Gas"@en ;
                                                skos:prefLabel "Gas"@en ;
@@ -5789,7 +5789,7 @@ emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 rdf:type owl:Class ;
                                                             """A symbolic entity is not necessarily graphical (e.g. it doesn't necessarily have the physical shape of a letter), but its elements can be decoded and put in relation with an alphabet.
 In other words, a sequence of bit \"1000010\" in a RAM (a non-graphical entity) is a valid symbol since it can be decoded through ASCII rules as the letter \"B\". The same holds for an entity standing for the sound of a voice saying: \"Hello\", since it can be decomposed in discrete parts, each of them being associated to a letter of an alphabet."""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Symbolic"@en ;
                                                skos:example """fe780
@@ -5909,7 +5909,7 @@ emmo:EMMO_06658d8d_dcde_4fc9_aae1_17f71c0bcdec rdf:type owl:Class ;
                                                                ] ;
                                                rdfs:comment "1-dimensional array who's spatial direct parts are numbers."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Vector"@en ;
                                                skos:altLabel "1DArray"@en ,
@@ -6399,7 +6399,7 @@ A solid is a crystal if it has essentially a sharp diffraction pattern. The word
 
 H=∑ni=1hia∗i  (n≥3)""" ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Crystal"@en ;
                                                skos:prefLabel "Crystal"@en ;
@@ -6690,7 +6690,7 @@ emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
                                                rdfs:comment "A single phase mixture."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "PhaseHomogeneousMixture"@en ;
                                                skos:prefLabel "PhaseHomogeneousMixture"@en ;
@@ -6866,7 +6866,7 @@ A set of quantity values being attributed to a measurand (quantity) together wit
 
 -- VIM"""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MeasurementResult"@en ;
                                                skos:prefLabel "MeasurementResult"@en ;
@@ -7032,7 +7032,7 @@ emmo:EMMO_1141d225_fe90_4230_82c6_31cab6a4e3fe rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
                                                rdfs:comment "Symbolic caterorised by its internal structure."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "SymbolicByStructure"@en ;
                                                skos:prefLabel "SymbolicByStructure"@en ;
@@ -8485,7 +8485,7 @@ This class is expected to host the definition of world objects as they appear in
                                                             "The superclass of entities which are defined by requiring the existence of some parts (at least one) of specifically given types, where the specified types are different with respect to the type of the whole."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Whole"@en ;
                                                skos:prefLabel "Whole"@en ;
@@ -8630,7 +8630,7 @@ emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe rdf:type owl:Class ;
                                                rdfs:comment "A solution is a homogeneous mixture composed of two or more substances."@en ,
                                                             "Solutions are characterized by the occurrence of Rayleigh scattering on light,"@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Solution"@en ;
                                                skos:prefLabel "Solution"@en ;
@@ -8868,7 +8868,7 @@ emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
                                                rdfs:comment "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CondensedMatter"@en ;
                                                skos:prefLabel "CondensedMatter"@en ;
@@ -9455,7 +9455,7 @@ See Shape4x3Matrix as an example."""@en ,
                                                             "Arrays are ordered mathematical objects who's elementary spatial parts are numbers. Their dimensionality is constructed with spatial direct parthood, where 1-dimensional arrays have spatial direct parts Number and n-dimensional array have spatial direct parts (n-1)-dimensional arrays."@en ,
                                                             "Arrays are ordered objects, since they are a subclasses of Arrangement."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Array"@en ;
                                                skos:example """A Vector is a 1-dimensional Array with Number as spatial direct parts,
@@ -9533,7 +9533,7 @@ emmo:EMMO_29afdf54_90ae_4c98_8845_fa9ea3f143a8 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6 ;
                                                rdfs:comment "An equation that define a new variable in terms of other mathematical entities."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "DefiningEquation"@en ;
                                                skos:example """The definition of velocity as v = dx/dt.
@@ -9786,7 +9786,7 @@ emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 rdf:type owl:Class ;
                                                             "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective" ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "TechnologyProcess"@en ;
                                                skos:altLabel "ProductionEngineeringProcess"@en ;
@@ -10600,7 +10600,7 @@ emmo:EMMO_34bdb169_90da_4d38_a351_647071804e5d rdf:type owl:Class ;
 emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_fc859d37_408d_44b6_b345_a0ea0b65121e ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ThermomechanicalTreatment"@en ;
                                                skos:prefLabel "ThermomechanicalTreatment"@en .
@@ -10992,7 +10992,7 @@ emmo:EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd rdf:type owl:Class ;
 emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialByClassicalMaterialsScience"@en ;
                                                skos:prefLabel "MaterialByClassicalMaterialsScience"@en ;
@@ -12077,7 +12077,7 @@ emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 rdf:type owl:Class ;
                                                rdfs:comment "A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en ,
                                                             "The class of individuals standing for an amount of matter (ordinary, anti or hybrid) substance (or mixture of substances) in different states of matter or phases."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Material"@en ;
                                                skos:prefLabel "Material"@en ;
@@ -12374,7 +12374,7 @@ emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce rdf:type owl:Class ;
                                                             "The superclass for causal structure classes whose individuals have some temporal item parts that are not of the same type of the whole."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Process"@en ;
                                                skos:altLabel "Occurrent"@en ,
@@ -12438,7 +12438,7 @@ emmo:EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_90f18cf0_1225_4c64_b5f8_f65cd7f992c5 ;
                                                rdfs:comment "A physics-based model based on a physics equation describing the behaviour of continuum volume."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ContinuumModel"@en ;
                                                skos:prefLabel "ContinuumModel"@en ;
@@ -12724,7 +12724,7 @@ emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 rdf:type owl:Class ;
                                                             "An intentional process in which an agent works with some entities according to some existing formalised operative rules."@en ,
                                                             "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Procedure"@en ;
                                                skos:altLabel "Elaboration"@en ,
@@ -13264,7 +13264,7 @@ emmo:EMMO_4bc29b0f_8fcc_4026_a291_f9774a66d9b8 rdf:type owl:Class ;
                                                rdfs:comment "A function defined using functional notation."@en ,
                                                             "A mathematical relation that relates each element in the domain (X) to exactly one element in the range (Y)."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MathematicalFunction"@en ;
                                                skos:altLabel "FunctionDefinition"@en ;
@@ -13292,7 +13292,7 @@ emmo:EMMO_4c151909_6f26_4ef9_b43d_7c9e9514883a rdf:type owl:Class ;
 emmo:EMMO_4c1f58cd_6e2c_48fb_8098_1cbb762abb05 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MetallicMaterial"@en ;
                                                skos:prefLabel "MetallicMaterial"@en .
@@ -13453,7 +13453,7 @@ emmo:EMMO_4d604a13_d1f6_42fd_818f_d3138d5e308c rdf:type owl:Class ;
 emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialByType"@en ;
                                                skos:prefLabel "MaterialByType"@en .
@@ -13464,7 +13464,7 @@ emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ;
                                                rdfs:comment "Discrete data that are decoded as a sequence of 1/0, or true/false, or on/off."@en ;
                                                rdfs:isDefinedBy chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "DigitalData"@en ;
                                                skos:altLabel "BinaryData"@en ;
@@ -13565,7 +13565,7 @@ The role type requires that also the whole type depends on the existence of part
                                                             "An entity that is categorized according to its relation with a whole through a parthood relation and that contributes to it according to an holistic criterion, where the type of the whole is not the type of the part."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Role"@en ;
                                                skos:altLabel "HolisticPart"@en ,
@@ -14443,7 +14443,7 @@ emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 rdf:type owl:Class ;
                                                rdfs:comment "A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions."@en ,
                                                             "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Mathematical"@en ;
                                                skos:prefLabel "Mathematical"@en ;
@@ -15348,7 +15348,7 @@ emmo:EMMO_5e77f00d_5c0a_44e7_baf1_2c2a4cb5b3ae rdf:type owl:Class ;
                                                                emmo:EMMO_77e2e601_5ecb_450b_b563_92f096997832 ;
                                                rdfs:comment "A solid solution made of two or more component substances."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "SolidSolution"@en ;
                                                skos:prefLabel "SolidSolution"@en ;
@@ -15431,7 +15431,7 @@ emmo:EMMO_5f334606_f67d_4f0e_acb9_eeb21cb10c66 rdf:type owl:Class ;
                                                rdfs:comment "Since a string is a simple type that can contain only characters but not other child elements, is often not suitable for representing human text, that may need additional elements for control of aspects such as bidirectional formatting or ruby annotation."@en ,
                                                             "Symbolic data that consist of a sequence of characters."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/reference/symbolic#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "StringData"@en ;
@@ -15966,7 +15966,7 @@ emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 rdf:type owl:Class ;
                                                             "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "HolisticSystem"@en ;
                                                skos:prefLabel "HolisticSystem"@en ;
@@ -16060,7 +16060,7 @@ emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a rdf:type owl:Class ;
 
 The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of \"phase\" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "PhaseOfMatter"@en ;
                                                skos:altLabel "Phase"@en ;
@@ -16917,7 +16917,7 @@ emmo:EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172 rdf:type owl:Class ;
                                                rdfs:comment "A symbolic data is a data that is rooted on some specified symbolic based encoding, such as floating point numbers, strings, integer. When a symbolic data is used for expressing numerical data (e.g., integer), it is not to be intended as a mathematical entity (even if it may be interpreted as such) but as a syntactic structure (datastructures or datatypes) based on concatenated tokens (or symbols, letters) that can deliver data."@en ,
                                                             "The class for entities which stands for a specific data format expressed using a symbolic encoding."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/reference/symbolic#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "SymbolicData"@en ;
@@ -16969,7 +16969,7 @@ emmo:EMMO_71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a rdf:type owl:Class ;
                                                rdfs:comment "A manufacturing process aimed to modify the precursor objects through a physical process (involving other materials, energy, manipulation) to change its material properties."@en ,
                                                             "A material process requires the output to be classified as an individual of a material subclass."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialsProcessing"@en ;
                                                skos:altLabel "ContinuumManufacturing"@en ;
@@ -18869,7 +18869,7 @@ emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 rdf:type owl:Class ;
                                                                    ) ;
                                                rdfs:comment "A continuum that has no fixed shape and yields easily to external pressure."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Fluid"@en ;
                                                skos:example "Gas, liquid, plasma,"@en ;
@@ -18942,7 +18942,7 @@ emmo:EMMO_88470739_03d3_4c47_a03e_b30a1288d50c rdf:type owl:Class ;
                                                rdfs:comment "A mathematical string that express a relation between the elements in one set X to elements in another set Y."@en ,
                                                             "The set X is called domain and the set Y range or codomain."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MathematicalFormula"@en ;
                                                skos:prefLabel "MathematicalFormula"@en ;
@@ -19158,7 +19158,7 @@ emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c rdf:type owl:Class ;
                                                rdfs:comment "A symbolic entity made of other symbolic entities according to a specific spatial configuration."@en ,
                                                             "This class collects individuals that represents arrangements of strings, or other symbolic compositions, without any particular predefined arrangement schema."@en ;
                                                rdfs:isDefinedBy chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/reference/symbolic#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "SymbolicConstruct"@en ;
@@ -19280,7 +19280,7 @@ emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 rdf:type owl:Class ;
 - it is the bearer of qualities that can exists only by the fact that it is a sum of parts
 - the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ContinuumSubstance"@en ;
                                                skos:prefLabel "ContinuumSubstance"@en ;
@@ -19955,7 +19955,7 @@ For this reason, the definition of object is done by considering only item tempo
                                                             "The superclass for causal structure classes whose individuals have all temporal item parts of the same type of the whole."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Object"@en ;
                                                skos:altLabel "Continuant"@en ,
@@ -20015,7 +20015,7 @@ emmo:EMMO_90f18cf0_1225_4c64_b5f8_f65cd7f992c5 rdf:type owl:Class ;
                                                                    ) ;
                                                rdfs:comment "A solvable set of one Physics Equation and one or more Materials Relations."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialsModel"@en ;
                                                rdfs:seeAlso "https://op.europa.eu/en/publication-detail/-/publication/ec1455c3-d7ca-11e6-ad7c-01aa75ed71a1"@en ;
@@ -20424,7 +20424,7 @@ For example, the car radio type requires all instances to be a part of a car, wh
                                                             "The superclass for all classes of individuals that requires their individuals to be part of another specific class of entity of different type with a specific role with respect to it."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "QualifiedRole"@en ;
                                                skos:altLabel "QRole"@en ;
@@ -21242,7 +21242,7 @@ emmo:EMMO_9d799b43_e188_4047_8167_121d96b31a26 rdf:type owl:Class ;
                                                rdfs:comment "The superclass for all classes that categorise objects according to their mereological and persistence context"@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ObjectByContext"@en ;
                                                skos:prefLabel "ObjectByContext"@en ;
@@ -21642,7 +21642,7 @@ A Symbol may be a String in another language.
 e.g. \"Bq\" is the symbol for Becquerel units when dealing with metrology, or a string of \"B\" and \"q\" symbols when dealing with characters."""@en ,
                                                             "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Symbol"@en ;
                                                skos:altLabel "AlphabeticEntity"@en ;
@@ -21828,7 +21828,7 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
                                                rdfs:comment "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Solid"@en ;
                                                skos:prefLabel "Solid"@en ;
@@ -21974,7 +21974,7 @@ emmo:EMMO_a49c2441_1e54_43f0_a1cf_2f553a23ac34 rdf:type owl:Class ;
                                                rdfs:comment "A process that occurs because of the exercise of the capacity to act of an agent."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Agency"@en ;
                                                skos:altLabel "AgentDrivenProcess"@en ;
@@ -22016,7 +22016,7 @@ emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b rdf:type owl:Class ;
                                                             "The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Manufacturing"@en ;
                                                rdfs:seeAlso "DIN 8580:2020"@en ,
@@ -23007,7 +23007,7 @@ emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6 rdf:type owl:Class ;
                                                                ] ;
                                                rdfs:comment "A mathematical entity based on a fundamental physics theory which defines the relations between physics quantities of an entity."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ,
                                                                 "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en ;
                                                rdfs:label "PhysicsBasedModel"@en ;
@@ -23626,7 +23626,7 @@ emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
                                                rdfs:comment "A system which is mainly characterised by the spatial configuration of its elements."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/reference/persholistic#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "HolisticArrangement"@en ;
@@ -23658,7 +23658,7 @@ emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 rdf:type owl:Class ;
                                                rdfs:comment "A superclass made as the disjoint union of all the form under which matter can exist."@en ,
                                                             "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "StateOfMatter"@en ;
                                                skos:prefLabel "StateOfMatter"@en ;
@@ -23739,7 +23739,7 @@ emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c rdf:type owl:Class ;
 Intentional agency may be further categorised acccording to the fact that the some of the resulting processes may or may not be coherent with the volition."""@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "IntentionalAgency"@en ;
                                                skos:altLabel "IntentionalProcess"@en ,
@@ -25560,7 +25560,7 @@ emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 rdf:type owl:Class ;
                                                                ] ;
                                                rdfs:comment "An object which is a spatial part of another object."@en ;
                                                rdfs:isDefinedBy chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/perspectives/persistence#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Constituent"@en ;
@@ -26405,7 +26405,7 @@ emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
                                                rdfs:comment "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Language"@en ;
                                                skos:prefLabel "Language"@en ;
@@ -27073,7 +27073,7 @@ This categorisation has been introduced due to the large use of object/process c
                                                             "The union of the object or process classes."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Persistence"@en ;
                                                skos:prefLabel "Persistence"@en ;
@@ -27454,7 +27454,7 @@ emmo:EMMO_e4de48b1_dabb_4490_ac2b_040f926c64f0 rdf:type owl:Class ;
 emmo:EMMO_e4e80813_f379_4091_b017_ee059811f806 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialBySize"@en ;
                                                skos:prefLabel "MaterialBySize"@en .
@@ -27523,7 +27523,7 @@ f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
 where f is the left hand and g the right hand  side expressions and v0, v1, ..., vn are the variables."""@en ,
                                                             "The class of 'mathematical'-s that stand for a statement of equality between two mathematical expressions."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/models#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Equation"@en ;
                                                skos:example """2+3 = 5
@@ -28221,7 +28221,7 @@ For example, an atom always requires a nucleus part to exist (but not viceversa)
                                                             "The superclass for all classes of individuals that requires to have a part of another specific class of entity of different type with a specific relation with it."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "QualifiedWhole"@en ;
                                                skos:altLabel "QWhole"@en ;
@@ -28360,7 +28360,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
                                                rdfs:comment "A Miixture is a material made up of two or more different substances which are physically (not chemically) combined."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Mixture"@en ;
                                                skos:prefLabel "Mixture"@en ;
@@ -28775,7 +28775,7 @@ A computation machine that calculate the average value of a dataset."""@en ;
 emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialByStructure"@en ;
                                                skos:prefLabel "MaterialByStructure"@en .
@@ -28843,7 +28843,7 @@ emmo:EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655 rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 ;
                                                rdfs:comment "Suggestion of Rickard Armiento" ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CrystallineMaterial"@en ;
                                                skos:prefLabel "CrystallineMaterial"@en .
@@ -29174,7 +29174,7 @@ emmo:EMMO_f53f45f2_c354_417c_a904_a2606ad584d7 rdf:type owl:Class ;
                                                rdfs:comment "Categorisation of processes by whether they are driven by an agent or not."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
                                                                 <https://w3id.org/emmo/disciplines/metrology#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "ProcessByAgency"@en ;
                                                skos:prefLabel "ProcessByAgency"@en ;
@@ -29285,7 +29285,7 @@ emmo:EMMO_f678173d_f036_4df1_a86b_2894560be617 rdf:type owl:Class ;
                                                                ] ;
                                                rdfs:comment "A material that contains two or more constituent materials."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/materials#> ,
-                                                                <https://w3id.org/emmo/domain/microstructure#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "CompositeMaterial"@en ;
                                                skos:altLabel "Composite"@en ;
@@ -29318,7 +29318,7 @@ emmo:EMMO_f6d0c26a_98b6_4cf8_8632_aa259131faaa rdf:type owl:Class ;
                                                rdfs:subClassOf emmo:EMMO_5be83f9c_a4ba_4b9a_be1a_5bfc6e891231 ;
                                                rdfs:comment "A mapping that acts on elements of one space and produces elements of another space."@en ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MathematicalOperator"@en ;
                                                skos:example "The algebraic operator '+' that acts on two real numbers and produces one real number."@en ,
@@ -29354,7 +29354,7 @@ emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 rdf:type owl:Class ;
                                                                ] ;
                                                rdfs:comment "A constituent of a system."@en ;
                                                rdfs:isDefinedBy chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://w3id.org/emmo/reference/persholistic#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "Component"@en ;
@@ -29390,7 +29390,7 @@ emmo:EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0 rdf:type owl:Class ;
 Abramowitz and Stegun, 1968"""@en ,
                                                             "An analogical icon expressed in mathematical language."@en ;
                                                rdfs:isDefinedBy chameo: ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microstructure#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MathematicalModel"@en ;
                                                skos:prefLabel "MathematicalModel"@en ;
@@ -29839,7 +29839,7 @@ emmo:EMMO_fc859d37_408d_44b6_b345_a0ea0b65121e rdf:type owl:Class ;
                                                             "Manufacturing by changing the properties of the material of which a workpiece is made, which is done, among other things, by changes in the submicroscopic or atomic range, e.g. by diffusion of atoms, generation and movement of dislocations in the atomic lattice or chemical reactions, and where unavoidable changes in shape are not part of the essence of these processes." ,
                                                             "esce workpiece" ;
                                                rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ,
-                                                                <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                                                <https://w3id.org/emmo/domain/microscopy#> ,
                                                                 <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                                                rdfs:label "MaterialTreatment"@en ;
                                                rdfs:seeAlso "DIN 8580:2020"@en ;
@@ -30501,7 +30501,7 @@ chameo:CharacterisationData rdf:type owl:Class ;
                             rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
                             rdfs:comment "Represents every type of data that is produced during a characterisation process"@en ;
                             rdfs:isDefinedBy chameo: ,
-                                             <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                             <https://w3id.org/emmo/domain/microscopy#> ,
                                              <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                             rdfs:label "CharacterisationData" ;
                             skos:prefLabel "CharacterisationData" ;
@@ -32259,7 +32259,7 @@ chameo:PreparedSample rdf:type owl:Class ;
                       owl:disjointWith chameo:ReferenceSample ;
                       rdfs:comment "The sample after a preparation process."@en ;
                       rdfs:isDefinedBy chameo: ,
-                                       <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                       <https://w3id.org/emmo/domain/microscopy#> ,
                                        <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                       rdfs:label "PreparedSample" ;
                       skos:prefLabel "PreparedSample" ;
@@ -32436,7 +32436,7 @@ chameo:Sample rdf:type owl:Class ;
                            "Portion of material selected from a larger quantity of material. The term needs to be qualified, e.g., bulk sample, representative sample, primary sample, bulked sample, test sample, etc. The term 'sample' implies the existence of a sampling error, i.e., the results obtained on the portions taken are only estimates of the concentration of a constituent or the quantity of a property present in the parent material. Sample and Specimen are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero." ,
                            "Sample and Specimen are often used interchangeably. However in some cases the term Specimen is used to specify a portion taken under conditions such that the sampling variability cannot be assessed (usually because the population is changing), and is assumed, for convenience, to be zero." ;
               rdfs:isDefinedBy chameo: ,
-                               <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                               <https://w3id.org/emmo/domain/microscopy#> ,
                                <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
               rdfs:label "Sample"@en ;
               skos:altLabel "Specimen" ;
@@ -32565,7 +32565,7 @@ chameo:SamplePreparation rdf:type owl:Class ;
                                          ] ;
                          rdfs:comment "Sample preparation processes (e.g., machining, polishing, cutting to size, etc.) before actual observation and measurement."@en ;
                          rdfs:isDefinedBy chameo: ,
-                                          <https://w3id.org/emmo/domain/microscopy/depencencies#> ,
+                                          <https://w3id.org/emmo/domain/microscopy#> ,
                                           <https://www.ntnu.edu/temgemini/vocab/temgo/depencencies#> ;
                          rdfs:label "SamplePreparation"@en ;
                          skos:prefLabel "SamplePreparation"@en ;
@@ -36049,7 +36049,7 @@ temgo:t8t9deformation_strain rdf:type owl:NamedIndividual ,
 
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
@@ -36061,7 +36061,19 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
+ ] .
+
+[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
+ ] .
+
+[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
  inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
+ ] .
+
+[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
@@ -36072,16 +36084,13 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
  ] .
 
-[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36090,34 +36099,16 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -36129,6 +36120,21 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -36147,16 +36153,10 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36177,22 +36177,13 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36204,34 +36195,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36246,13 +36210,16 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36261,37 +36228,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -36301,6 +36238,69 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
  ] .
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
